@@ -1,0 +1,46 @@
+{
+  "name": "nifty",
+  "version": "4.0.1",
+  "description": "Nifty responsive admin template",
+  "scripts": {
+    "clean": "npx rimraf dist/**",
+    "dev": "parcel serve src/*.html --public-url / --dist-dir dev -p 3000",
+    "dist": "parcel build src/*.html --public-url / --dist-dir dist --no-cache",
+    "build": "npm run clean && npm run dist"
+  },
+  "author": "themeon.net",
+  "sass": {
+    "includePaths": [
+      "./node_modules"
+    ]
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "@fnando/sparkline": "^0.3.10",
+    "@popperjs/core": "^2.11.8",
+    "@yaireo/tagify": "^4.26.5",
+    "bootstrap": "^5.3.3",
+    "bootstrap5-tags": "^1.7.1",
+    "chart.js": "^4.4.3",
+    "charts.css": "^1.1.0",
+    "clipboard": "^2.0.11",
+    "dropzone": "^6.0.0-beta.2",
+    "flag-icons": "^7.2.1",
+    "fullcalendar": "^6.1.11",
+    "gridjs": "^6.2.0",
+    "ionicons": "^7.4.0",
+    "litepicker": "^2.0.12",
+    "loaders.css": "^0.1.2",
+    "mc-datepicker": "^0.6.5",
+    "md-date-time-picker": "^2.3.0",
+    "overlayscrollbars": "^2.8.0",
+    "quill": "^2.0.2",
+    "spinkit": "^2.0.1",
+    "tabulator-tables": "^6.2.1",
+    "weathericons": "^2.1.0",
+    "zangdar": "^1.3.4"
+  }
+}

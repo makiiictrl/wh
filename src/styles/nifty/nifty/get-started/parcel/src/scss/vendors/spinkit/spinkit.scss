@@ -1,0 +1,14 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Import official spinkit style
+// ---------------------------------------------------------------------------------
+@import "node_modules/spinkit/spinkit";
+
+:root {
+  --sk-size: 40px;
+  --sk-color: var( --#{ $prefix }primary );
+}

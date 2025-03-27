@@ -1,0 +1,158 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Tagify SCSS variables
+// ---------------------------------------------------------------------------------
+$tags-border-color:         $input-border-color;
+$tags-hover-border-color:   $input-border-color;
+$tags-focus-border-color:   var( --#{ $prefix }primary );
+$tagMargin:                 .325rem !default;
+$tag-pad:                   .3em .5em !default;
+$tag-min-width:             1ch !default;
+$tag-max-width:             auto !default;
+$tag-text-color:            var( --#{ $prefix }emphasis-color ) !default;
+$tag-text-color--edit:      var( --#{ $prefix }emphasis-color ) !default;
+$tag-bg:                    var( --#{ $prefix }tertiary-bg ) !default;
+$tag-hover:                 var( --#{ $prefix }secondary-bg ) !default;
+$tag-remove:                $danger !default;
+$tag-remove-btn-color:      $tag-text-color !default;
+$tag-remove-btn-bg:         var( --#{ $prefix }tertiary-bg ) !default;
+$tag-remove-btn-bg--hover:  darken($tag-remove, 8) !default;
+$tag-invalid-color:         $tag-remove !default;
+$tag-invalid-bg:            rgba($tag-remove, .5) !default;
+$tag-inset-shadow-size:     1.1em !default;
+$tag-hide-transition:       .5s !default;
+$placeholder-color:         $input-placeholder-color !default;
+$placeholder-color-focus:   $placeholder-color !default;
+$input-color:               var( --#{ $prefix }emphasis-color ) !default;
+$tagify-dd-bg-color:        white !default;
+$tagify-dd-color-primary:   rgb(53,149,246) !default;
+
+
+
+// Import tagify scss style
+// ---------------------------------------------------------------------------------
+@import "@yaireo/tagify/src/tagify.scss";
+
+
+
+// Tagify's CSS variables
+// ---------------------------------------------------------------------------------
+:root {
+   --tagify-dd-color-primary: var( --#{ $prefix }primary );
+   --tagify-dd-bg-color:      var( --#{$prefix}component-bg );
+   --tagify-dd-item-pad:      .3em .5em;
+}
+
+.tagify {
+   --tags-disabled-bg:        #{ $input-disabled-bg };
+   --tag-border-radius:       var( --#{ $prefix }border-radius-sm );
+   --readonly-striped:        1;
+}
+
+.tagify__tag div::before {
+   --tag-bg-inset: 0 !important;
+}
+
+
+
+// Overide tagify style
+// ---------------------------------------------------------------------------------
+.tagify {
+   border-radius: $input-border-radius;
+   color: $tag-text-color;
+   display: flex;
+   transition: $input-transition;
+
+   &--focus {
+      box-shadow: $input-focus-box-shadow;
+      transition: $input-transition;
+   }
+
+   &[disabled] {
+      .tagify__input {
+         visibility: visible !important;
+      }
+   }
+
+   &.tagify--select {
+      .tagify__input {
+         cursor: pointer;
+      }
+   }
+
+   &.tagify--outside {
+      border: 0;
+
+      .tagify__tag:first-child {
+         margin-inline-start: 0;
+      }
+
+      .tagify__input {
+         border-radius: $input-border-radius;
+         border: 1px solid var(--tags-border-color);
+         flex: 100%;
+         margin: 0;
+         order: -1;
+         padding: $input-padding-y $input-padding-x;
+         transition: .1s;
+      }
+
+      &.tagify--focus {
+         box-shadow: none !important;
+
+         .tagify__input {
+            box-shadow: $input-focus-box-shadow;
+         }
+      }
+   }
+}
+
+
+
+.tagify__dropdown {
+   overflow: visible;
+
+   &__wrapper{
+      border-radius: var( --#{ $prefix }border-radius );
+      border: 0;
+      box-shadow: $dropdown-box-shadow;
+      padding: .5rem;
+   }
+
+   &__item{
+      border-radius: var( --#{ $prefix }border-radius-sm );
+      color: var( --#{ $prefix }emphasis-color );
+      padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+
+      &:hover, &--active {
+         background-color: $dropdown-link-hover-bg;
+      }
+   }
+}
+
+
+// Custom suggestion dropdown
+// ---------------------------------------------------------------------------------
+.tags-look .tagify__dropdown__item{
+   background: var( --#{$prefix}tertiary-bg );
+   border-radius: 3px;
+   color: var( --#{$prefix}emphasis-color );
+   display: inline-block;
+   font-size: .85em;
+   margin: .2em;
+   padding: .3em .5em;
+   vertical-align: middle;
+}
+
+.tags-look .tagify__dropdown__item:last-child{
+   display: block;
+}
+
+.tags-look .tagify__dropdown__item:hover {
+   background-color: var(--bs-primary);
+   color: var(--bs-primary-color);
+}

@@ -1,0 +1,25 @@
+// Bootstrap functions
+// ---------------------------------------------------------------------------------
+@import "bootstrap/scss/functions";
+
+
+
+// User custom styles
+// ---------------------------------------------------------------------------------
+@import "./src/scss/my-custom-styles/styles";
+
+
+
+// Colors system
+// ---------------------------------------------------------------------------------
+@import "../nifty-admin/colors/palettes/default";
+@import "../nifty-admin/colors/schemes/default";
+@import "../nifty-admin/colors/variables";
+
+
+
+// Global variables
+// ---------------------------------------------------------------------------------
+@import "../nifty-admin/bootstrap/variables";
+@import "../nifty-admin/bootstrap/variables-dark";
+@import "../nifty-admin/nifty/variables";

@@ -1,0 +1,25 @@
+{
+  "name": "warehouse-ui",
+  "version": "1.0.0",
+  "description": "Cathay Warehouse React App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build.js --watch --dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
+    "esbuild": "^0.25.1",
+    "esbuild-sass-plugin": "^3.3.1",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "sass": "^1.86.0"
+  }
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-scheme="navy">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+   <title>Toggler Buttons | Nifty - Admin Template</title>
+
+
+   <!-- STYLESHEETS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+   <!-- Fonts [ OPTIONAL ] -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+   <!-- Bootstrap CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+   <!-- Nifty CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/nifty.min.css">
+
+
+   <!-- Favicons [ OPTIONAL ] -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+   <link rel="manifest" href="./site.webmanifest">
+
+</head>
+
+<body class="out-quart">
+
+
+   <!-- PAGE CONTAINER -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div id="root" class="root mn--max mn--sticky">
+
+      <!-- CONTENTS -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section id="content" class="content">
+         <div class="content__header content__boxed border-bottom overlapping">
+            <div class="content__wrap mt-1 pt-4">
+
+
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Toggler Buttons</li>
+                  </ol>
+               </nav>
+               <!-- END : Breadcrumb -->
+
+
+               <h1 class="page-title mb-0 mt-2">Toggler Buttons</h1>
+
+               <p class="lead"></p>
+            </div>
+
+         </div>
+
+
+         <div class="content__boxed text-body-emphasis fs-5">
+            <div class="content__wrap">
+               <p>Use this plugin to create a helpful button to display your content. You can make a fullscreen browser, full-page browser content or toggle a class for some element.</p>
+
+               <section class="mb-5 pt-4">
+                  <h2>Fullscreen &amp; Full-page</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <button class="btn btn-primary btn-lg" data-nf-toggler="fullscreen" data-nf-target="html">Fullscreen</button>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">button</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-primary btn-lg&#34;</span> <span style="color:#eed49f">data-nf-toggler</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;fullscreen&#34;</span> <span style="color:#eed49f">data-nf-target</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;html&#34;</span><span style="color:#cad3f5">&gt;</span>Fullscreen<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">button</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+
+                  <div class="mt-5">
+                     <h3 class="h4">Targeting an element</h3>
+                     <p>Make fullscreen by targeting the element; in this case, we target the card element as fullscreen or just a full-page content browser.</p>
+                     <div class="row gx-5 mb-5">
+                        <div class="col-md-6">
+                           <div id="_dm-fullscreenCard" class="card">
+                              <div class="card-body">
+                                 <h5 class="card-title">Fullscreen Card</h5>
+                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, provident aliquid officiis quas aperiam optio dolore hic a, corrupti voluptate explicabo quos quae. Ad ducimus molestiae sequi.</p>
+                                 <a href="#" class="btn btn-success" data-nf-toggler="fullscreen" data-nf-target="#_dm-fullscreenCard">Go fullscreen</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div id="_dm-fullpageCard" class="card">
+                              <div class="card-body">
+                                 <h5 class="card-title">Full-page Card</h5>
+                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, provident aliquid officiis quas aperiam optio dolore hic a, corrupti voluptate explicabo quos quae. Ad ducimus molestiae sequi.</p>
+                                 <a href="#" class="btn btn-warning" data-nf-toggler="fullpage" data-nf-target="#_dm-fullpageCard">Go fullpage</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="highlight">
+                        <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>// Fullscreen
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">a</span> <span style="color:#eed49f">href</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-success&#34;</span> <span style="color:#eed49f">data-nf-toggler</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;fullscreen&#34;</span> <span style="color:#eed49f">data-nf-target</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#_dm-fullscreenCard&#34;</span><span style="color:#cad3f5">&gt;</span>Go fullscreen<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">a</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>// Full-page
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">a</span> <span style="color:#eed49f">href</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-warning&#34;</span> <span style="color:#eed49f">data-nf-toggler</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;fullpage&#34;</span> <span style="color:#eed49f">data-nf-target</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#_dm-fullpageCard&#34;</span><span style="color:#cad3f5">&gt;</span>Go fullpage<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">a</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                     </div>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pt-4">
+                  <h2>Dismiss an element</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="row gx-5">
+                        <div class="col-md-6">
+                           <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                              <button class="btn btn-danger btn-lg" data-nf-toggler="dismiss" data-nf-target="#_dm-dismissableCard">
+                                 Click to remove the card
+                              </button>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div id="_dm-dismissableCard" class="card">
+                              <div class="card-body">
+                                 <h5 class="card-title">Dismissable Card</h5>
+                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, provident aliquid officiis quas aperiam optio dolore hic a, corrupti voluptate explicabo quos quae. Ad ducimus molestiae sequi.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">button</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-danger btn-lg&#34;</span> <span style="color:#eed49f">data-nf-toggler</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dismiss&#34;</span> <span style="color:#eed49f">data-nf-target</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#_dm-dismissableCard&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   Click to remove the card
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">button</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pt-4">
+                  <h2>Toggle a class</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="row gx-5">
+                        <div class="col-md-6">
+                           <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                              <button class="btn btn-info btn-lg" data-nf-toggler="class" data-nf-target="#_dm-toggleClassCard" data-nf-class="bg-dark">
+                                 Toggle the .bg-dark class
+                              </button>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div id="_dm-toggleClassCard" class="card">
+                              <div class="card-body">
+                                 <h5 class="card-title">Default Card</h5>
+                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, provident aliquid officiis quas aperiam optio dolore hic a, corrupti voluptate explicabo quos quae. Ad ducimus molestiae sequi.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">button</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-info btn-lg&#34;</span> <span style="color:#eed49f">data-nf-toggler</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;class&#34;</span> <span style="color:#eed49f">data-nf-target</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#_dm-toggleClassCard&#34;</span> <span style="color:#eed49f">data-nf-class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;bg-dark&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   Toggle the .bg-dark class
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">button</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pt-3">
+                  <h2 class="mt-5">Default variables</h2>
+                  <p>It comes with default variables but allows for modifying variables on the page load upon initialization.</p>
+
+                  <div class="table-responsive mb-5">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Default</th>
+                              <th>Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><code>event</code></td>
+                              <td>string</td>
+                              <td><code>click</code></td>
+                              <td>
+                                 The default event type for applying an action to a target.
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><code>dataKey</code></td>
+                              <td>string</td>
+                              <td><code>data-nf-toggler</code></td>
+                              <td>Name of the attribute to indicate the toggler button.</td>
+                           </tr>
+                           <tr>
+                              <td><code>dataTargetKey</code></td>
+                              <td>string</td>
+                              <td><code>data-nf-target</code></td>
+                              <td>Name the attribute that will add a target selector when the button is clicked.</td>
+                           </tr>
+                           <tr>
+                              <td><code>dataClassKey</code></td>
+                              <td>string</td>
+                              <td><code>data-nf-class</code></td>
+                              <td>This attribute is only available when your button targets an element to toggle a class. It should be filled with a class name.</td>
+                           </tr>
+                           <tr>
+                              <td><code>toggleMode</code></td>
+                              <td>object</td>
+                              <td><code>{<br>
+                                    &emsp;"FullScreen" : "fullscreen",
+                                    &emsp;"FullPage" : "fullpage",
+                                    &emsp;"Dismiss" : "dismiss",
+                                    &emsp;"Class" : "class"<br>
+                                    }
+                                 </code></td>
+                              <td>List of functions that are currently supported. You might need it to change the object's value to your language.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <p class="mb-1">Get the default variables</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Toggler</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span>
+</span></span></code></pre>
+                  </div>
+
+
+                  <p class="mb-1">Modify the default variable.</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Toggler</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">dataKey</span> <span style="color:#91d7e3">=</span> <span style="color:#a6da95">&#34;data-my-toggler&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Toggler</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">dataTargetKey</span> <span style="color:#91d7e3">=</span> <span style="color:#a6da95">&#34;data-my-target&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">...</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pt-5">
+                  <h2>Methods</h2>
+                  <div class="table-responsive mb-5">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th width="200">Method</th>
+                              <th>Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><code>dispose</code></td>
+                              <td>Destroys an element’s toggler. (Removes stored data on the DOM element)</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+
+            </div>
+         </div>
+
+
+         <!-- FOOTER -->
+
+         <footer class="pt-5 mt-auto">
+            <div class="content__boxed">
+               <div class="content__wrap py-2 d-flex flex-column flex-md-row align-items-md-center">
+                  <div class="text-nowrap text-body-emphasis fs-5">Copyright &copy; 2014 - 2024 <a href="https://themeon.net/" class="h5 link-primary text-decoration-none ms-1">ThemeOn</a></div>
+               </div>
+            </div>
+         </footer>
+
+         <!-- END - FOOTER -->
+
+
+      </section>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - CONTENTS -->
+
+
+      <!-- MAIN NAVIGATION -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <nav id="mainnav-container" class="mainnav">
+         <div class="mainnav__inner py-3">
+
+            <!-- Navigation menu -->
+            <div class="mainnav__top-content scrollable-content pb-5">
+
+
+               <!-- Base Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Base</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Welcome
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./introduction.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Introduction
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./changelogs.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Changelogs
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./quick-tips.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Quick Tips
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Base Category -->
+
+
+               <!-- Templates Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Templates</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./folders-structure.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Folders Structure
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./basic-template.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Basic Template
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./animations.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Animations
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./build-tools.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Build Tools
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Templates Category -->
+
+
+               <!-- Elements Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Elements</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./header.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Header
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Navigation</span>
+                        </a>
+
+                        <!-- Navigation submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./navigation-mini-and-maxi.html" class="nav-link">Mini &amp; Maxi</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-offcanvas.html" class="nav-link">OffCanvas</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-sticky-nav.html" class="nav-link">Sticky Nav</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Navigation submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Sidebar</span>
+                        </a>
+
+                        <!-- Sidebar submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./sidebar-stuck.html" class="nav-link">Stuck</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-unite.html" class="nav-link">Unite</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-pinned.html" class="nav-link">Pinned</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-more-options.html" class="nav-link">More Options</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Sidebar submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Elements Category -->
+
+
+               <!-- Styles Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Styles</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scss.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              SCSS Files
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-schemes.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Schemes
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-palette.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Palette
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Styles Category -->
+
+
+               <!-- Components Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Components</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scroll-to-top.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Scroll to top
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode-switcher.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode Switcher
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./main-navigation.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Main Navigation
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./sidebar-toggler.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Sidebar Toggler
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./toggler-buttons.html" class="nav-link mininav-toggle active">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Toggler Buttons
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Components Category -->
+
+
+               <!-- More Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">More</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./third-party-plugins.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Third Party Plugins
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : More Category -->
+
+
+            </div>
+            <!-- End - Navigation menu -->
+
+
+         </div>
+      </nav>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - MAIN NAVIGATION -->
+
+
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - PAGE CONTAINER -->
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div class="scroll-container">
+      <a href="#root" class="scroll-page ratio ratio-1x1" aria-label="Scroll button"></a>
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - SCROLL TO TOP BUTTON -->
+
+
+   <!-- JAVASCRIPTS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+   <!-- Popper JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/popperjs/popper.min.js"></script>
+
+
+   <!-- Bootstrap JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+
+
+   <!-- Nifty JS [ OPTIONAL ] -->
+   <script src="./assets/js/nifty.min.js"></script>
+
+
+</body>
+
+</html>

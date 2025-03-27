@@ -1,0 +1,40 @@
+{
+  "name": "nifty",
+  "version": "4.0.1",
+  "description": "Nifty responsive admin template",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build --emptyOutDir",
+    "test": "npm run build"
+  },
+  "author": "themeon.net",
+  "devDependencies": {
+    "sass": "^1.77.2",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "@fnando/sparkline": "^0.3.10",
+    "@popperjs/core": "^2.11.8",
+    "@yaireo/tagify": "^4.26.5",
+    "bootstrap": "^5.3.3",
+    "bootstrap5-tags": "^1.7.1",
+    "chart.js": "^4.4.3",
+    "charts.css": "^1.1.0",
+    "clipboard": "^2.0.11",
+    "dropzone": "^6.0.0-beta.2",
+    "flag-icons": "^7.2.1",
+    "fullcalendar": "^6.1.11",
+    "gridjs": "^6.2.0",
+    "ionicons": "^7.4.0",
+    "litepicker": "^2.0.12",
+    "loaders.css": "^0.1.2",
+    "mc-datepicker": "^0.6.5",
+    "md-date-time-picker": "^2.3.0",
+    "overlayscrollbars": "^2.8.0",
+    "quill": "^2.0.2",
+    "spinkit": "^2.0.1",
+    "tabulator-tables": "^6.2.1",
+    "weathericons": "^2.1.0",
+    "zangdar": "^1.3.4"
+  }
+}

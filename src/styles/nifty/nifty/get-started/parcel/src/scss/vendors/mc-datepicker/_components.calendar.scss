@@ -1,0 +1,150 @@
+/*============================================*/
+/*              Calendar Components           */
+/*============================================*/
+.mc-calendar {
+   @include includeColors();
+   background-color: $main-bg-color;
+   display: flex;
+   flex-direction: column;
+   font-family: $calendar-font;
+   font-weight: 500;
+   left: 50vw;
+   overflow: hidden;
+   position: absolute;
+   top: -100vh;
+   user-select: none;
+   visibility: hidden;
+
+   &:focus {
+      outline: none;
+   }
+
+   &--opened {
+      visibility: visible;
+   }
+
+   &--inline {
+      background: none;
+      border-radius: 10px;
+      box-shadow: 0 0 1px $date-inactive-text-color;
+      font-size: var(var(--#{ $prefix }font-size));
+      height: 100%;
+      max-height: 325px;
+      max-width: 300px;
+      width: 100%;
+      z-index: 1002;
+
+      @include for-desktop {
+         transform: unset;
+      }
+
+      .mc-picker__body {
+         padding-bottom: 1.5rem;
+      }
+   }
+
+   &--modal {
+      background-color: transparent;
+      border-radius: 0 0 30px 30px;
+      box-shadow: $dropdown-box-shadow;
+      max-width: 425px;
+      position: fixed;
+      transform: translate(-500%, -500%);
+      transition: transform 0.4s linear 0.2s, visibility 0s linear 0.5s, top 0s linear 0.5s;
+      width: 100%;
+      z-index: 1002;
+      animation: slideDown #{ $dropdown-transition-in };
+
+      .mc-display {
+         background-color: var(--mc-display-background);
+         max-height: none !important;
+         animation: none !important;
+      }
+
+      .mc-picker {
+         border-radius: 0 !important;
+      }
+
+
+      @include for-desktop {
+         border-radius: 10px;
+         box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+         flex-direction: row;
+         height: 400px;
+         max-width: unset;
+         opacity: 0;
+         transform: translate(-50%, -50%);
+         transition: transform 0.3s, opacity 0.3s, visibility 0s linear 0.3s, top 0s linear 0.3s;
+         width: auto;
+      }
+
+      &#{$opened} {
+         animation: slideUp #{ $dropdown-transition-in };
+         top: 50vh;
+         transform: translate(-50%, -50%);
+         transition: unset;
+
+         @include for-desktop {
+            height: 95vh;
+            max-height: 400px;
+            opacity: 1;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+            visibility: visible;
+            //@include popup();
+         }
+      }
+   }
+
+   &--permanent {
+      height: 100%;
+      left: 0;
+      position: relative;
+      top: 0;
+      width: 100%;
+   }
+
+   .mc-date.mc-date--active:hover:not(.mc-date--picked),
+   .mc-month-year__cell:hover {
+      background-color: var( --mc-date-active-hover-background );
+      color: var( --mc-date-active-hover-foreground );
+
+   }
+}
+
+
+// Transition timing
+// ---------------------------------------------------------------------------------
+@each $name, $transition-timing in $transition-timings {
+   .#{ $name } {
+      .mc-calendar--modal {
+         &, &#{$opened} {
+            animation-timing-function: $transition-timing !important;
+         }
+      }
+   }
+}
+
+
+// Animation keyframe
+// ---------------------------------------------------------------------------------
+@keyframes slideUp {
+   from {
+      opacity: 0;
+      transform: translate3d(-50%, calc(-50% - -30px),0);
+   }
+   100% {
+      opacity: 1;
+      transform: translate3d(-50%, -50%,0);
+   }
+}
+@keyframes slideDown {
+   from {
+      opacity: 1;
+      transform: translate3d(-50%, -50%,0);
+   }
+   to {
+      opacity: 0;
+      transform: translate3d(-50%, calc(-50% - -30px),0);
+   }
+}

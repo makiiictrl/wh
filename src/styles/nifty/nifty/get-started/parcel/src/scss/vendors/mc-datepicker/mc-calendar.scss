@@ -1,0 +1,56 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Import Bootstrap's mixin for styling the buttons.
+// ---------------------------------------------------------------------------------
+@import "bootstrap/scss/mixins";
+
+
+
+// MCDatePicker style
+// ---------------------------------------------------------------------------------
+// Settings
+@import "settings.typography";
+@import "mc-datepicker/src/scss/settings.layout";
+@import "mc-datepicker/src/scss/settings.colors";
+@import "mc-datepicker/src/scss/settings.breakpoints";
+@import "mc-datepicker/src/scss/settings.animations";
+
+
+// Tools
+@import "mc-datepicker/src/scss/tools.mixins";
+@import "mc-datepicker/src/scss/tools.transitions";
+
+
+// Generic
+@import "mc-datepicker/src/scss/generic.resets";
+
+
+// Elements
+@import "mc-datepicker/src/scss/elements.all";
+
+
+// Objects
+@import "mc-datepicker/src/scss/objects.layout";
+
+
+// Components
+@import "components.calendar";
+@import "mc-datepicker/src/scss/components.display";
+@import "mc-datepicker/src/scss/components.picker";
+@import "components.selector";
+@import "mc-datepicker/src/scss/components.date";
+@import "mc-datepicker/src/scss/components.table";
+@import "mc-datepicker/src/scss/components.month_year_preview";
+@import "components.buttons";
+
+
+// Utilities
+@import "mc-datepicker/src/scss/utilities.display";
+
+
+// Overide Variables
+@import "settings.colors";

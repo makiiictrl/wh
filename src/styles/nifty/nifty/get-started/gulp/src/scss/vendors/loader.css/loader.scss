@@ -1,0 +1,23 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+$primary-color    : var( --looader-primary-color );
+
+.loader {
+   --looader-primary-color : var( --#{ $prefix }primary );
+
+   display: inline-flex;
+   min-width: 4.6875rem;
+   min-height: 4.6875rem;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+// Import official Loaders style
+// ---------------------------------------------------------------------------------
+@import "loaders.css/src/loaders.scss";

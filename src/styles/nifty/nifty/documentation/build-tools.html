@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-scheme="navy">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+   <title>Build Tools | Nifty - Admin Template</title>
+
+
+   <!-- STYLESHEETS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+   <!-- Fonts [ OPTIONAL ] -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+   <!-- Bootstrap CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+   <!-- Nifty CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/nifty.min.css">
+
+
+   <!-- Favicons [ OPTIONAL ] -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+   <link rel="manifest" href="./site.webmanifest">
+
+</head>
+
+<body class="out-quart">
+
+
+   <!-- PAGE CONTAINER -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div id="root" class="root mn--max">
+
+      <!-- CONTENTS -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section id="content" class="content">
+         <div class="content__header content__boxed border-bottom overlapping">
+            <div class="content__wrap mt-1 pt-4">
+
+
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Build Tools</li>
+                  </ol>
+               </nav>
+               <!-- END : Breadcrumb -->
+
+
+               <h1 class="page-title mb-0 mt-2">Build Tools</h1>
+
+               <p class="lead"></p>
+            </div>
+
+         </div>
+
+
+         <div class="content__boxed text-body-emphasis fs-5">
+            <div class="content__wrap">
+               <p>We're including three build tools to save you time once you've gotten started with the theme. All the build tools have the same command line to get started with development and build your app for production.</p>
+               <p>Here is the list of build tools that are included in the Getting Started folder.</p>
+
+               <div class="bg-body-tertiary bg-opacity-50 p-4 rounded">
+                  <table class="table mb-0" style="--bs-table-border-color: transparent">
+                     <tbody>
+                        <tr>
+                           <td class="w-100px fw-semibold pb-1">Gulp</td>
+                           <td class="pb-1"><a href="https://gulpjs.com/" class="btn-link link-underline-dotted link-offset-2" target="_blank">gulpjs.com</a></td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" class="pt-0">Leverage gulp and the flexibility of JavaScript to automate slow, repetitive workflows and compose them into efficient build pipelines.</td>
+                        </tr>
+                        <tr>
+                           <td class="w-100px fw-semibold pb-1">Parcel</td>
+                           <td class="pb-1"><a href="https://parceljs.org/" class="btn-link link-underline-dotted link-offset-2" target="_blank">parceljs.org</a></td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" class="pt-0">Parcel combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production application.</td>
+                        </tr>
+                        <tr>
+                           <td class="w-100px fw-semibold pb-1">Vite</td>
+                           <td class="pb-1"><a href="https://vitejs.dev/" class="btn-link link-underline-dotted link-offset-2" target="_blank">vitejs.dev</a></td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" class="pt-0">Vite is the next generation frontend tooling, Get ready for a development environment that can finally catch up with you.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+
+               <h2 class="mt-5">Getting Started</h2>
+               <p>Please make sure you have <code class="fs-5 bg-white px-2 py-1 rounded">NodeJS</code> and ( <code class="fs-5 bg-white px-2 py-1 rounded">npm</code>, <code class="fs-5 bg-white px-2 py-1 rounded">yarn</code>, or <code class="fs-5 bg-white px-2 py-1 rounded">pnpm</code> ) installed on your machine.</p>
+
+               <ul class="mt-5 ps-4">
+                  <li>
+                     <p>First install dependencies:</p>
+
+                     <ul class="nav nav-underline nav-component border-bottom" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3 active" data-bs-toggle="tab" data-bs-target="#_dm-firstStepNpm" type="button" role="tab" aria-controls="npm" aria-selected="true">npm</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-firstStepYarn" type="button" role="tab" aria-controls="yarn" aria-selected="false">yarn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-firstStepPnpm" type="button" role="tab" aria-controls="pnpm" aria-selected="false">pnpm</button>
+                        </li>
+                     </ul>
+
+
+                     <div class="tab-content py-3">
+                        <div id="_dm-firstStepNpm" class="tab-pane show active" role="tabpanel" aria-labelledby="npm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm install
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-firstStepYarn" class="tab-pane" role="tabpanel" aria-labelledby="yarn-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yarn
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-firstStepPnpm" class="tab-pane" role="tabpanel" aria-labelledby="pnpm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pnpm install
+</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <p>To run in hot module reloading mode:</p>
+
+                     <ul class="nav nav-underline nav-component gap-1 border-bottom" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3 active" data-bs-toggle="tab" data-bs-target="#_dm-secondStepNpm" type="button" role="tab" aria-controls="npm" aria-selected="true">npm</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-secondStepYarn" type="button" role="tab" aria-controls="yarn" aria-selected="false">yarn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-secondStepPnpm" type="button" role="tab" aria-controls="pnpm" aria-selected="false">pnpm</button>
+                        </li>
+                     </ul>
+
+
+                     <div class="tab-content py-3">
+                        <div id="_dm-secondStepNpm" class="tab-pane show active" role="tabpanel" aria-labelledby="npm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm run dev
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-secondStepYarn" class="tab-pane" role="tabpanel" aria-labelledby="yarn-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yarn dev
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-secondStepPnpm" class="tab-pane" role="tabpanel" aria-labelledby="pnpm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pnpm run dev
+</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+
+                     <p class="mb-5">Then go to:
+                        <a href="http://localhost:3000" target="_blank" class="btn-link link-underline-dotted link-offset-2">http://localhost:3000</a>
+                     </p>
+                  </li>
+                  <li>
+                     <p>To create a production build:</p>
+                     <ul class="nav nav-underline nav-component gap-1 border-bottom" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3 active" data-bs-toggle="tab" data-bs-target="#_dm-thirdStepNpm" type="button" role="tab" aria-controls="npm" aria-selected="true">npm</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-thirdStepYarn" type="button" role="tab" aria-controls="yarn" aria-selected="false">yarn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link px-3" data-bs-toggle="tab" data-bs-target="#_dm-thirdStepPnpm" type="button" role="tab" aria-controls="pnpm" aria-selected="false">pnpm</button>
+                        </li>
+                     </ul>
+
+
+                     <div class="tab-content py-3">
+                        <div id="_dm-thirdStepNpm" class="tab-pane show active" role="tabpanel" aria-labelledby="npm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm run build
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-thirdStepYarn" class="tab-pane" role="tabpanel" aria-labelledby="yarn-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>yarn build
+</span></span></code></pre>
+                           </div>
+                        </div>
+                        <div id="_dm-thirdStepPnpm" class="tab-pane" role="tabpanel" aria-labelledby="pnpm-tab">
+                           <div class="highlight">
+                              <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pnpm run build
+</span></span></code></pre>
+                           </div>
+                        </div>
+                     </div>
+
+                  </li>
+               </ul>
+
+            </div>
+         </div>
+
+
+         <!-- FOOTER -->
+
+         <footer class="pt-5 mt-auto">
+            <div class="content__boxed">
+               <div class="content__wrap py-2 d-flex flex-column flex-md-row align-items-md-center">
+                  <div class="text-nowrap text-body-emphasis fs-5">Copyright &copy; 2014 - 2024 <a href="https://themeon.net/" class="h5 link-primary text-decoration-none ms-1">ThemeOn</a></div>
+               </div>
+            </div>
+         </footer>
+
+         <!-- END - FOOTER -->
+
+
+      </section>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - CONTENTS -->
+
+
+      <!-- MAIN NAVIGATION -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <nav id="mainnav-container" class="mainnav">
+         <div class="mainnav__inner py-3">
+
+            <!-- Navigation menu -->
+            <div class="mainnav__top-content scrollable-content pb-5">
+
+
+               <!-- Base Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Base</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Welcome
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./introduction.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Introduction
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./changelogs.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Changelogs
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./quick-tips.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Quick Tips
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Base Category -->
+
+
+               <!-- Templates Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Templates</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./folders-structure.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Folders Structure
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./basic-template.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Basic Template
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./animations.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Animations
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./build-tools.html" class="nav-link mininav-toggle active">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Build Tools
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Templates Category -->
+
+
+               <!-- Elements Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Elements</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./header.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Header
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Navigation</span>
+                        </a>
+
+                        <!-- Navigation submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./navigation-mini-and-maxi.html" class="nav-link">Mini &amp; Maxi</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-offcanvas.html" class="nav-link">OffCanvas</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-sticky-nav.html" class="nav-link">Sticky Nav</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Navigation submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Sidebar</span>
+                        </a>
+
+                        <!-- Sidebar submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./sidebar-stuck.html" class="nav-link">Stuck</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-unite.html" class="nav-link">Unite</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-pinned.html" class="nav-link">Pinned</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-more-options.html" class="nav-link">More Options</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Sidebar submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Elements Category -->
+
+
+               <!-- Styles Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Styles</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scss.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              SCSS Files
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-schemes.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Schemes
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-palette.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Palette
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Styles Category -->
+
+
+               <!-- Components Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Components</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scroll-to-top.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Scroll to top
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode-switcher.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode Switcher
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./main-navigation.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Main Navigation
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./sidebar-toggler.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Sidebar Toggler
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./toggler-buttons.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Toggler Buttons
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Components Category -->
+
+
+               <!-- More Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">More</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./third-party-plugins.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Third Party Plugins
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : More Category -->
+
+
+            </div>
+            <!-- End - Navigation menu -->
+
+
+         </div>
+      </nav>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - MAIN NAVIGATION -->
+
+
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - PAGE CONTAINER -->
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div class="scroll-container">
+      <a href="#root" class="scroll-page ratio ratio-1x1" aria-label="Scroll button"></a>
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - SCROLL TO TOP BUTTON -->
+
+
+   <!-- JAVASCRIPTS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+   <!-- Popper JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/popperjs/popper.min.js"></script>
+
+
+   <!-- Bootstrap JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+
+
+   <!-- Nifty JS [ OPTIONAL ] -->
+   <script src="./assets/js/nifty.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Variables
+// ---------------------------------------------------------------------------------
+$tags-bg:                     var( --#{ $prefix }tertiary-bg ) !default;
+$tags-color:                  var( --#{ $prefix }emphasis-color ) !default;
+
+$tags-badge-font-size:        var( --#{ $prefix }body-font-size ) !default;
+$tags-badge-line-height:      var( --#{ $prefix }body-line-height ) !default;
+$tags-badge-padding-y:        .3em;
+$tags-badge-padding-x:        .5em;
+$tags-badge-margin:           .325rem .325rem .325rem 0;
+
+
+
+// Basic styles
+// ---------------------------------------------------------------------------------
+.form-control.dropdown.form-select {
+   align-items: center;
+   cursor: text;
+   display: flex;
+   min-height: calc( #{$input-padding-y * 2} + 2px + var( --#{ $prefix }body-font-size ) * var( --#{ $prefix }body-line-height ) );
+   padding-block: 0;
+   padding-inline: .5em;
+
+   input[type="text"] {
+
+      &::placeholder {
+         color: $input-placeholder-color;
+      }
+
+      &:first-child{
+         padding-inline-start: .5em !important;
+      }
+   }
+}
+
+
+.tags-badge {
+   display: inline-flex;
+   align-items: center;
+   padding: $tags-badge-padding-y $tags-badge-padding-x;
+   margin: $tags-badge-margin !important;
+   font-size: $tags-badge-font-size;
+   font-weight: normal;
+   line-height: $tags-badge-line-height;
+
+   &.bg-tags {
+      background-color: $tags-bg;
+      color: $tags-color;
+   }
+
+   .btn-close {
+      padding: 0 !important;
+      font-size: 1em !important;
+
+      @at-root {
+         [data-bs-theme="auto"] #{ & }, [data-bs-theme="light"] #{ & } {
+            filter: none !important;
+         }
+      }
+   }
+}
+
+
+.tags-menu {
+   padding: .5rem !important;
+}

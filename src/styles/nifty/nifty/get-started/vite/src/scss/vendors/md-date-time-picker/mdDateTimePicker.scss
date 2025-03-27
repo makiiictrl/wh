@@ -1,0 +1,289 @@
+//@import "node_modules/md-date-time-picker/dist/css/mdDateTimePicker.min";
+
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Import Bootstrap's mixin for styling the buttons.
+// ---------------------------------------------------------------------------------
+@import "bootstrap/scss/mixins";
+
+
+
+// MD Date Time Picker variables
+// ---------------------------------------------------------------------------------
+$regular:                             var( --#{ $prefix }font-sans-serif );
+$md-button-color:                     var( --#{ $prefix }link-hover-color );
+$md-button-color--disabled:           var( --#{ $prefix }secondary-color );
+$picker-header-color:                 var( --#{ $prefix }primary );
+$color-secondary-text:                var( --#{ $prefix }danger );
+
+$picker-body-color:                   var( --#{ $prefix }component-bg );
+$md-button-color--focus:              transparent; // btn-hover
+$md-button-color--active:             rgba( 0,0,0, .1 ); // btn-click
+
+$picker-primary-text-theme-color:     var( --#{ $prefix }emphasis-color ); // days color
+$picker-secondary-text-theme-color:   var( --#{ $prefix }link-hover-color ); //weeks color
+
+$picker-circle-color:                 rgba( 0,0,0, .05 ); // Time base color
+$picker-line-color:                   var( --#{ $prefix }primary );
+
+$md-button-primary-bg:                var( --#{ $prefix }primary );
+$md-button-primary-color:             var( --#{ $prefix }primary-color );
+$md-button-secondary-bg:              var( --#{ $prefix }secondary );
+$md-button-secondary-color:           var( --#{ $prefix }dark );
+
+$md-days-selected-bg:                 var( --#{ $prefix }primary );
+$md-days-selected-color:              var( --#{ $prefix }primary-color );
+$md-days-hover-bg:                    var( --#{ $prefix }component-hover-bg );
+$md-days-hover-color:                 var( --#{ $prefix }component-hover-color );
+$md-today-bg:                         var( --#{ $prefix }primary-bg-subtle );
+$md-today-color:                      var( --#{ $prefix }primary-text-emphasis );
+
+
+// SVG Images
+// ---------------------------------------------------------------------------------
+$picker-button-left:                  'data:image/svg+xml;utf8,<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m15.41 16.09-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>';
+$picker-button-left-disabled:         'data:image/svg+xml;utf8,<svg fill-opacity="0.2" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m15.41 16.09-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>';
+$picker-button-right:                 'data:image/svg+xml;utf8,<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m8.59 16.34 4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/><path d="M0-.25h24v24H0z" fill="none"/></svg>';
+$picker-button-right-disabled:        'data:image/svg+xml;utf8,<svg fill-opacity="0.2" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m8.59 16.34 4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/><path d="M0-.25h24v24H0z" fill="none"/></svg>';
+
+
+
+@import "node_modules/md-date-time-picker/src/scss/component";
+
+@mixin button-variant-shadows($value) {
+   & {
+      box-shadow: 0 0 0 $value, 0 0 0 rgba($black, .25);
+
+      &:hover {
+         box-shadow: 0 .1rem .5rem rgba($value, .5), 0 .25rem 1rem rgba($value, .5)
+      }
+
+      &:active {
+         box-shadow: 0 0 .5rem rgba($value, 1), 0 0 .75rem rgba($black, 0.2) !important
+      }
+
+      &:focus,
+      &:active:focus {
+         box-shadow: 0 0 0 1px rgba($value, 1), 0 0 .7rem .25rem rgba($value, .4) !important
+      }
+   }
+}
+
+
+
+// Date or time component dialog
+// ---------------------------------------------------------------------------------
+.mddtp-picker {
+   border-radius: var( --#{ $prefix }border-radius );
+   box-shadow: $dropdown-box-shadow;
+   z-index: 999;
+
+   &:not( .mddtp-picker--portrait ) .mddtp-picker__header {
+      min-width: 200px;
+      max-width: 300px;
+   }
+}
+
+
+
+// Days
+// ---------------------------------------------------------------------------------
+.mddtp-picker__body .mddtp-picker__viewHolder .mddtp-picker__grid {
+
+   // Selected
+   span.mddtp-picker__cell--selected {
+      background-color: $md-days-selected-bg;
+      color: $md-days-selected-color;
+   }
+
+
+   // Days hover
+   .mddtp-picker__tr span.mddtp-picker__cell:not(.mddtp-picker__cell--selected):hover {
+      background-color: $md-days-hover-bg;
+      color: $md-days-hover-color;
+   }
+
+   // Today
+   span.mddtp-picker__cell--today:not(.mddtp-picker__cell--selected) {
+      background-color: $md-today-bg;
+      color: $md-today-color;
+   }
+}
+
+.mddtp-picker__years > li {
+   &:hover {
+      background-color: $md-days-hover-bg;
+      color: $md-days-hover-color;
+   }
+}
+
+
+
+.mddtp-picker--portrait .mddtp-picker__body .mddtp-picker__viewHolder .mddtp-picker__view {
+    vertical-align: top;
+}
+
+
+#mddtp-date__previous, #mddtp-date__next,
+.mddtp-picker--portrait .mddtp-picker__body .mddtp-picker__viewHolder .mddtp-picker__grid span:empty{
+    height: 0;
+}
+
+
+.mddtp-picker--portrait .mddtp-picker__body .mddtp-picker__action {
+    margin-top: 1rem;
+}
+
+
+
+// Centered the time picker header
+// ---------------------------------------------------------------------------------
+.mddtp-picker--portrait.mddtp-picker-time .mddtp-picker__header {
+    text-align: center;
+    width: 100%;
+}
+
+.mddtp-picker-date .mddtp-picker__left, .mddtp-picker-date .mddtp-picker__right,
+.mddtp-picker__body .mddtp-picker__viewHolder .mddtp-picker__grid span {
+    border-radius: var(--#{ $prefix }border-radius);
+}
+
+.mddtp-picker, .mddtp-button, .mddtp-picker__title {
+    font-family: var(--#{ $prefix }body-font-family) !important;
+}
+
+
+
+// Buttons
+// ---------------------------------------------------------------------------------
+.mddtp-button {
+   --#{$prefix}btn-padding-x: #{$btn-padding-x};
+   --#{$prefix}btn-padding-y: #{$btn-padding-y};
+   --#{$prefix}btn-font-family: #{$btn-font-family};
+   @include rfs($btn-font-size, --#{$prefix}btn-font-size);
+   --#{$prefix}btn-font-weight: #{$btn-font-weight};
+   --#{$prefix}btn-line-height: #{$btn-line-height};
+   --#{$prefix}btn-color: #{$btn-color};
+   --#{$prefix}btn-bg: transparent;
+   --#{$prefix}btn-border-width: #{$btn-border-width};
+   --#{$prefix}btn-border-color: transparent;
+   --#{$prefix}btn-border-radius: #{$btn-border-radius};
+   --#{$prefix}btn-hover-border-color: transparent;
+   --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
+   --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
+   --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+
+
+   display: inline-block;
+   padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x);
+   font-family: var(--#{$prefix}body-font-family);
+   @include font-size(var(--#{$prefix}btn-font-size));
+   font-weight: var(--#{$prefix}btn-font-weight);
+   line-height: var(--#{$prefix}btn-line-height);
+   color: var(--#{$prefix}btn-color);
+   text-align: center;
+   text-decoration: if($link-decoration ==none, null, none);
+   white-space: $btn-white-space;
+   vertical-align: baseline;
+   cursor: if($enable-button-pointers, pointer, null);
+   user-select: none;
+   border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
+   @include border-radius(var(--#{$prefix}btn-border-radius));
+   @include gradient-bg(var(--#{$prefix}btn-bg));
+   @include transition($btn-transition);
+   backface-visibility: hidden;
+}
+
+#mddtp-date__cancel, #mddtp-time__cancel {
+   --#{$prefix}btn-shadow: var(--#{ $prefix }secondary-rgb);
+
+   text-transform: capitalize;
+   background-color: $md-button-secondary-bg;
+   color: $md-button-secondary-color;
+   @include button-variant-shadows(var(--#{$prefix}btn-shadow));
+}
+
+
+#mddtp-date__ok, #mddtp-time__ok {
+   --#{$prefix}btn-shadow: var(--#{ $prefix }primary-rgb);
+
+   color: $md-button-primary-color;
+   background-color: $md-button-primary-bg;
+   @include button-variant-shadows(var(--#{$prefix}btn-shadow));
+}
+
+
+
+// Animation
+// ---------------------------------------------------------------------------------
+.mddtp-picker__body {
+   .mddtp-picker__viewHolder, .mddtp-picker__years {
+      animation: none;
+   }
+
+   .mddtp-picker__years:not(.mddtp-picker__years--invisible){
+      background-color: $picker-body-color;
+   }
+}
+
+.mddtp-picker.animated {
+   animation-duration: $dropdown-transition-in;
+}
+
+
+
+// Transition timing
+// ---------------------------------------------------------------------------------
+@each $name, $transition-timing in $transition-timings {
+   .#{ $name } {
+      .mddtp-picker.animated {
+         animation-timing-function: $transition-timing !important;
+      }
+      .mddtp-picker__selection {
+         transition-timing-function: $transition-timing !important;
+      }
+   }
+}
+
+
+// Animation keyframe
+// ---------------------------------------------------------------------------------
+@keyframes zoomIn {
+   from {
+      opacity: 0;
+      transform: translate3d(-50%, calc(-50% - -30px),0);
+   }
+   100% {
+      opacity: 1;
+      transform: translate3d(-50%, -50%,0);
+   }
+}
+@keyframes zoomOut {
+   from {
+      opacity: 1;
+      transform: translate3d(-50%, -50%,0);
+   }
+   to {
+      opacity: 0;
+      transform: translate3d(-50%, calc(-50% - -30px),0);
+   }
+}
+
+/* Dark Mode */
+/* ---------------------------------------------- */
+@if $enable-dark-mode {
+   @include color-mode(dark, true) {
+      color-scheme: dark;
+      .mddtp-prev-handle, .mddtp-next-handle {
+         filter: invert(95%);
+      }
+
+      .mddtp-picker__circularView .mddtp-picker__cell--selected span {
+         color: var(--#{ $prefix }primary-color);
+      }
+   }
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-scheme="navy">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+   <title>Basic Template | Nifty - Admin Template</title>
+
+
+   <!-- STYLESHEETS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+   <!-- Fonts [ OPTIONAL ] -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+   <!-- Bootstrap CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+   <!-- Nifty CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/nifty.min.css">
+
+
+   <!-- Favicons [ OPTIONAL ] -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+   <link rel="manifest" href="./site.webmanifest">
+
+</head>
+
+<body class="out-quart">
+
+
+   <!-- PAGE CONTAINER -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div id="root" class="root mn--max">
+
+      <!-- CONTENTS -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section id="content" class="content">
+         <div class="content__header content__boxed border-bottom overlapping">
+            <div class="content__wrap mt-1 pt-4">
+
+
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Basic Template</li>
+                  </ol>
+               </nav>
+               <!-- END : Breadcrumb -->
+
+
+               <h1 class="page-title mb-0 mt-2">Basic Template</h1>
+
+               <p class="lead"></p>
+            </div>
+
+         </div>
+
+
+         <div class="content__boxed text-body-emphasis fs-5">
+            <div class="content__wrap">
+               <p class="mb-3">All template files have a fixed structure consisting of a <code class="fs-5 bg-white px-2 py-1 rounded">header</code>, <code class="fs-5 bg-white px-2 py-1 rounded">navigation</code> and <code class="fs-5 bg-white px-2 py-1 rounded">content</code>.
+                  The <code class="fs-5 bg-white px-2 py-1 rounded">sidebar</code> and <code class="fs-5 bg-white px-2 py-1 rounded">footer</code> are just extras if you need them.
+               </p>
+
+
+               <img class="img-fluid" src="./assets/img/doc-template.png" alt="Basic Template Images">
+
+
+               <h2 class="mt-5">Structure</h2>
+               <p>The basic template structure includes all the elements.</p>
+               <div class="highlight">
+                  <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#8aadf4;font-style:italic">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex; background-color:#393c4d"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">html</span> <span style="color:#eed49f">lang</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;en&#34;</span> <span style="color:#eed49f">data-bs-theme</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">data-scheme</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;navy&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">head</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   ...
+</span></span><span style="display:flex;"><span>   ...
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">head</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">body</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- PAGE CONTAINER --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;root&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;root&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- CONTENTS --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">section</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;content&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;content&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         <span style="color:#5b6078;font-style:italic">&lt;!-- ADD YOUR CONTENT HERE --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>         <span style="color:#5b6078;font-style:italic">&lt;!-- FOOTER --&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">footer</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mt-auto&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;content__boxed&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;content__wrap py-3 py-md-1 d-flex flex-column flex-md-row align-items-md-center&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>                  ...
+</span></span><span style="display:flex;"><span>                  ...
+</span></span><span style="display:flex;"><span>               <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">footer</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">section</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- HEADER --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">header</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;header&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;header__inner&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>            ...
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">header</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- MAIN NAVIGATION --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">nav</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mainnav-container&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mainnav&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mainnav__inner&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#5b6078;font-style:italic">&lt;!-- Navigation menu --&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mainnav__top-content scrollable-content pb-5&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>               ...
+</span></span><span style="display:flex;"><span>            <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">nav</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- SIDEBAR --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">aside</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;sidebar&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;sidebar__inner scrollable-content&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>            ...
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">aside</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- END - PAGE CONTAINER --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- SCROLL TO TOP BUTTON --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#5b6078;font-style:italic">&lt;!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;scroll-container&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">a</span> <span style="color:#eed49f">href</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;#root&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;scroll-page ratio ratio-1x1&#34;</span> <span style="color:#eed49f">aria-label</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;Scroll button&#34;</span><span style="color:#cad3f5">&gt;&lt;/</span><span style="color:#c6a0f6">a</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">body</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">html</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span></code></pre>
+               </div>
+
+            </div>
+         </div>
+
+
+         <!-- FOOTER -->
+
+         <footer class="pt-5 mt-auto">
+            <div class="content__boxed">
+               <div class="content__wrap py-2 d-flex flex-column flex-md-row align-items-md-center">
+                  <div class="text-nowrap text-body-emphasis fs-5">Copyright &copy; 2014 - 2024 <a href="https://themeon.net/" class="h5 link-primary text-decoration-none ms-1">ThemeOn</a></div>
+               </div>
+            </div>
+         </footer>
+
+         <!-- END - FOOTER -->
+
+
+      </section>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - CONTENTS -->
+
+
+      <!-- MAIN NAVIGATION -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <nav id="mainnav-container" class="mainnav">
+         <div class="mainnav__inner py-3">
+
+            <!-- Navigation menu -->
+            <div class="mainnav__top-content scrollable-content pb-5">
+
+
+               <!-- Base Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Base</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Welcome
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./introduction.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Introduction
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./changelogs.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Changelogs
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./quick-tips.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Quick Tips
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Base Category -->
+
+
+               <!-- Templates Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Templates</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./folders-structure.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Folders Structure
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./basic-template.html" class="nav-link mininav-toggle active">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Basic Template
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./animations.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Animations
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./build-tools.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Build Tools
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Templates Category -->
+
+
+               <!-- Elements Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Elements</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./header.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Header
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Navigation</span>
+                        </a>
+
+                        <!-- Navigation submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./navigation-mini-and-maxi.html" class="nav-link">Mini &amp; Maxi</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-offcanvas.html" class="nav-link">OffCanvas</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-sticky-nav.html" class="nav-link">Sticky Nav</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Navigation submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Sidebar</span>
+                        </a>
+
+                        <!-- Sidebar submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./sidebar-stuck.html" class="nav-link">Stuck</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-unite.html" class="nav-link">Unite</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-pinned.html" class="nav-link">Pinned</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-more-options.html" class="nav-link">More Options</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Sidebar submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Elements Category -->
+
+
+               <!-- Styles Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Styles</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scss.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              SCSS Files
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-schemes.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Schemes
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-palette.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Palette
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Styles Category -->
+
+
+               <!-- Components Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Components</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scroll-to-top.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Scroll to top
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode-switcher.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode Switcher
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./main-navigation.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Main Navigation
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./sidebar-toggler.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Sidebar Toggler
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./toggler-buttons.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Toggler Buttons
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Components Category -->
+
+
+               <!-- More Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">More</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./third-party-plugins.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Third Party Plugins
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : More Category -->
+
+
+            </div>
+            <!-- End - Navigation menu -->
+
+
+         </div>
+      </nav>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - MAIN NAVIGATION -->
+
+
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - PAGE CONTAINER -->
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div class="scroll-container">
+      <a href="#root" class="scroll-page ratio ratio-1x1" aria-label="Scroll button"></a>
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - SCROLL TO TOP BUTTON -->
+
+
+   <!-- JAVASCRIPTS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+   <!-- Popper JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/popperjs/popper.min.js"></script>
+
+
+   <!-- Bootstrap JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+
+
+   <!-- Nifty JS [ OPTIONAL ] -->
+   <script src="./assets/js/nifty.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" data-scheme="navy">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+   <title>Color Mode Switcher | Nifty - Admin Template</title>
+
+
+   <!-- STYLESHEETS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+   <!-- Fonts [ OPTIONAL ] -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+   <!-- Bootstrap CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+   <!-- Nifty CSS [ REQUIRED ] -->
+   <link rel="stylesheet" href="./assets/css/nifty.min.css">
+
+
+   <!-- Favicons [ OPTIONAL ] -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+   <link rel="manifest" href="./site.webmanifest">
+
+</head>
+
+<body class="out-quart">
+
+
+   <!-- PAGE CONTAINER -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div id="root" class="root mn--max mn--sticky">
+
+      <!-- CONTENTS -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <section id="content" class="content">
+         <div class="content__header content__boxed border-bottom overlapping">
+            <div class="content__wrap mt-1 pt-4">
+
+
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Color Mode Switcher</li>
+                  </ol>
+               </nav>
+               <!-- END : Breadcrumb -->
+
+
+               <h1 class="page-title mb-0 mt-2">Color Mode Switcher</h1>
+
+               <p class="lead"></p>
+            </div>
+
+         </div>
+
+
+         <div class="content__boxed text-body-emphasis fs-5">
+            <div class="content__wrap">
+               <p>Turn your checkboxes, radio buttons, or select components into the Color mode switcher.
+                  Add a <code class="fs-5 bg-white px-2 py-1 rounded">.mode-switcher</code> class that will automatically initialize and turn it into a toggler component.</p>
+
+               <section class="mb-5 pb-3">
+                  <h2>Select</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="row gx-5">
+                        <div class="col-md-6">
+                           <p class="mb-3">These select components have the <code class="fs-5 bg-white px-2 py-1 rounded">Auto</code> option.</p>
+                           <select class="form-select mode-switcher" aria-label="select color mode" autocomplete="off">
+                              <option value="auto">Auto</option>
+                              <option value="light">Light Mode</option>
+                              <option value="dark">Dark Mode</option>
+                           </select>
+                        </div>
+                        <div class="col-md-6">
+                           <p class="mb-3">The <code class="fs-5 bg-white px-2 py-1 rounded">Auto</code> option is removed from this component.</p>
+                           <select class="form-select mode-switcher" aria-label="select color mode" autocomplete="off">
+                              <option value="light">Light Mode</option>
+                              <option value="dark">Dark Mode</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">select</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-select mode-switcher&#34;</span> <span style="color:#eed49f">aria-label</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;select color mode&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex; background-color:#393c4d"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">option</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;auto&#34;</span><span style="color:#cad3f5">&gt;</span>Auto<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">option</span><span style="color:#cad3f5">&gt;</span> <span style="color:#5b6078;font-style:italic">&lt;!-- With or without the Auto option --&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">option</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span><span style="color:#cad3f5">&gt;</span>Light Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">option</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">option</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">option</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">select</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pb-3">
+                  <h2>Checkbox</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+
+
+                     <div class="row gx-3">
+                        <div class="col-md-4">
+                           <p>This is a minimal mode with no added value attributes.</p>
+                           <div class="form-check">
+                              <input id="_dm-cbBasicColorMode" class="form-check-input mode-switcher" type="checkbox" autocomplete="off">
+                              <label for="_dm-cbBasicColorMode" class="form-check-label">
+                                 Dark Mode
+                              </label>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <p>Add a value light and dark to the checkbox but without an auto checkbox</p>
+                           <div class="d-block">
+                              <div class="form-check">
+                                 <input id="_dm-cbNoAutoColorMode_1" class="form-check-input mode-switcher" type="checkbox" value="light" autocomplete="off">
+                                 <label for="_dm-cbNoAutoColorMode_1" class="form-check-label">
+                                    Light Mode
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input id="_dm-cbNoAutoColorMode_2" class="form-check-input mode-switcher" type="checkbox" value="dark" autocomplete="off">
+                                 <label for="_dm-cbNoAutoColorMode_2" class="form-check-label">
+                                    Dark Mode
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <p>All checkboxes have values; add an auto checkbox to the list.</p>
+                           <div class="d-block">
+                              <div class="form-check">
+                                 <input id="_dm-cbAutoColorMode_1" class="form-check-input mode-switcher" type="checkbox" value="auto" autocomplete="off">
+                                 <label for="_dm-cbAutoColorMode_1" class="form-check-label">
+                                    Auto Mode
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input id="_dm-cbAutoColorMode_2" class="form-check-input mode-switcher" type="checkbox" value="light" autocomplete="off">
+                                 <label for="_dm-cbAutoColorMode_2" class="form-check-label">
+                                    Light Mode
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input id="_dm-cbAutoColorMode_3" class="form-check-input mode-switcher" type="checkbox" value="dark" autocomplete="off">
+                                 <label for="_dm-cbAutoColorMode_3" class="form-check-label">
+                                    Dark Mode
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- This is a minimal mode with no added value attributes. --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBasicColorMode&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBasicColorMode&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- Add a value light and dark to the checkbox but without an auto checkbox --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;d-block&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbNoAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbNoAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>Light Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbNoAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbNoAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- All checkboxes have values; add an auto checkbox to the list.--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;d-block&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;auto&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         Auto Mode
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         Light Mode
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_3&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbAutoColorMode_3&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         Dark Mode
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+
+                  <h3 class="h4">Checkboxes with button group</h3>
+                  <p>Combine button-like checkbox into a seamless looking button group.</p>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="btn-group" role="group" aria-label="Checkbox toggle button group">
+                        <input type="checkbox" class="btn-check mode-switcher" id="_dm-cbBtnGroupColorMode_1" value="auto" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-cbBtnGroupColorMode_1">Auto Mode</label>
+
+                        <input type="checkbox" class="btn-check mode-switcher" id="_dm-cbBtnGroupColorMode_2" value="light" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-cbBtnGroupColorMode_2">Light Mode</label>
+
+                        <input type="checkbox" class="btn-check mode-switcher" id="_dm-cbBtnGroupColorMode_3" value="dark" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-cbBtnGroupColorMode_3">Dark Mode</label>
+                     </div>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-group&#34;</span> <span style="color:#eed49f">role</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;group&#34;</span> <span style="color:#eed49f">aria-label</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;Checkbox toggle button group&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_1&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;auto&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_1&#34;</span><span style="color:#cad3f5">&gt;</span>Auto Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_2&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_2&#34;</span><span style="color:#cad3f5">&gt;</span>Light Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_3&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbBtnGroupColorMode_3&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+
+                  <h3 class="h4">Switches</h3>
+                  <p>A switch has the markup of a custom checkbox but uses the <code class="fs-5 bg-white px-2 py-1 rounded">.form-switch</code> class to render a toggle switch.</p>
+
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="row">
+                        <div class="col-6">
+                           <div class="form-check form-switch">
+                              <input id="_dm-cbSwitchesColorMode_1" class="form-check-input mode-switcher" type="checkbox" autocomplete="off">
+                              <label for="_dm-cbSwitchesColorMode_1" class="form-check-label ms-2">Dark Mode</label>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <div class="form-check form-switch">
+                              <input id="_dm-cbSwitchesIconsColorMode_1" class="form-check-input mode-switcher" type="checkbox" role="switch">
+                              <label for="_dm-cbSwitchesIconsColorMode_1" class="form-check-label ps-1 fw-bold d-none d-md-flex align-items-center ">
+                                 <span class="mode-switcher-icon icon-light ms-2 text-primary">
+                                    <svg fill="currentColor" width="24" height="24" viewBox="0 0 32 32">
+                                       <path d="M16 6c-5.147 0-9.333 4.188-9.333 9.333s4.187 9.333 9.333 9.333c5.145 0 9.333-4.188 9.333-9.333s-4.188-9.333-9.333-9.333z"></path>
+                                       <path d="M16 26c-0.368 0-0.667 0.3-0.667 0.667v4c0 0.367 0.299 0.667 0.667 0.667s0.667-0.3 0.667-0.667v-4c0-0.367-0.299-0.667-0.667-0.667z"></path>
+                                       <path d="M16 4.667c0.368 0 0.667-0.3 0.667-0.667v-2.667c0-0.367-0.299-0.667-0.667-0.667s-0.667 0.3-0.667 0.667v2.667c0 0.367 0.299 0.667 0.667 0.667z"></path>
+                                       <path d="M30 14.667h-2.667c-0.367 0-0.667 0.3-0.667 0.667s0.3 0.667 0.667 0.667h2.667c0.367 0 0.667-0.3 0.667-0.667s-0.3-0.667-0.667-0.667z"></path>
+                                       <path d="M5.333 15.333c0-0.367-0.299-0.667-0.667-0.667h-2.667c-0.368 0-0.667 0.3-0.667 0.667s0.299 0.667 0.667 0.667h2.667c0.368 0 0.667-0.3 0.667-0.667z"></path>
+                                       <path d="M24.307 23.364c-0.26-0.26-0.684-0.26-0.943 0-0.26 0.259-0.26 0.683 0 0.943l2.533 2.535c0.131 0.132 0.303 0.195 0.472 0.195 0.172 0 0.341-0.065 0.472-0.195 0.259-0.259 0.259-0.684 0-0.943l-2.535-2.535z"></path>
+                                       <path d="M7.025 7.969c0.131 0.132 0.301 0.195 0.472 0.195s0.341-0.065 0.472-0.195c0.26-0.259 0.26-0.683 0-0.943l-1.868-1.867c-0.26-0.26-0.683-0.26-0.943 0s-0.26 0.683 0 0.943l1.867 1.867z"></path>
+                                       <path d="M24.031 7.693c0.169 0 0.341-0.065 0.472-0.195l1.397-1.397c0.259-0.26 0.259-0.683 0-0.943s-0.684-0.26-0.943 0l-1.397 1.397c-0.26 0.259-0.26 0.684 0 0.945 0.131 0.127 0.301 0.192 0.471 0.192z"></path>
+                                       <path d="M7.221 22.893l-2.064 2.063c-0.26 0.26-0.26 0.683 0 0.943 0.131 0.131 0.301 0.195 0.472 0.195s0.341-0.065 0.472-0.195l2.064-2.063c0.26-0.26 0.26-0.683 0-0.943s-0.684-0.26-0.944 0z"></path>
+                                    </svg>
+                                    <span class="ms-1 fw-normal">Light Mode</span>
+                                 </span>
+                                 <span class="mode-switcher-icon icon-dark ms-2">
+                                    <svg fill="currentColor" width="20" height="20" viewBox="0 0 32 32">
+                                       <path d="M29.384 25.32c-0.084-0.229-0.291-0.393-0.535-0.424-6.843-0.935-12.003-6.844-12.003-13.748 0-3.344 1.219-6.581 3.428-9.115 0.16-0.185 0.208-0.443 0.121-0.672-0.084-0.229-0.291-0.393-0.531-0.427-0.759-0.104-1.435-0.156-2.069-0.156-8.395 0-15.221 6.828-15.221 15.221s6.828 15.221 15.221 15.221c4.385 0 8.565-1.907 11.465-5.227 0.161-0.188 0.208-0.445 0.123-0.675z"></path>
+                                    </svg>
+                                    <span class="ms-1 fw-normal">Dark Mode</span>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- Basic example --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check form-switch&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbSwitchesColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbSwitchesColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label ms-2&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- Swhitch with icons --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check form-switch&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbSwitchesIconsColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;checkbox&#34;</span> <span style="color:#eed49f">role</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;switch&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-cbSwitchesIconsColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label ps-1 fw-bold d-none d-md-flex align-items-center &#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">span</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mode-switcher-icon icon-light ms-2 text-primary&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#5b6078;font-style:italic">&lt;!-- Add your icon here --&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">span</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;ms-1 fw-normal&#34;</span><span style="color:#cad3f5">&gt;</span>Light Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">span</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">span</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">span</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;mode-switcher-icon icon-dark ms-2&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#5b6078;font-style:italic">&lt;!-- Add your icon here --&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">span</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;ms-1 fw-normal&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">span</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">span</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pb-3">
+                  <h2>Radio Buttons</h2>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="row">
+                        <div class="col-6">
+                           <p class="mb-3">The radio button has no <code class="fs-5 bg-white px-2 py-1 rounded">auto</code> option.</p>
+                           <div class="form-check">
+                              <input id="_dm-rdNoAutoColorMode_1" class="form-check-input mode-switcher" name="color-mode-radio" type="radio" value="light" autocomplete="off">
+                              <label for="_dm-rdNoAutoColorMode_1" class="form-check-label">
+                                 Light Mode
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input id="_dm-rdNoAutoColorMode_2" class="form-check-input mode-switcher" name="color-mode-radio" type="radio" value="dark" autocomplete="off">
+                              <label for="_dm-rdNoAutoColorMode_2" class="form-check-label">
+                                 Dark Mode
+                              </label>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <p class="mb-3">Radio with an <code class="fs-5 bg-white px-2 py-1 rounded">auto</code> option.</p>
+                           <div class="form-check">
+                              <input id="_dm-rdAutoColorMode_1" class="form-check-input mode-switcher" name="color-mode-radio-auto" type="radio" value="auto" autocomplete="off">
+                              <label for="_dm-rdAutoColorMode_1" class="form-check-label">
+                                 Auto
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input id="_dm-rdAutoColorMode_2" class="form-check-input mode-switcher" name="color-mode-radio-auto" type="radio" value="light" autocomplete="off">
+                              <label for="_dm-rdAutoColorMode_2" class="form-check-label">
+                                 Light Mode
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input id="_dm-rdAutoColorMode_3" class="form-check-input mode-switcher" name="color-mode-radio-auto" type="radio" value="dark" autocomplete="off">
+                              <label for="_dm-rdAutoColorMode_3" class="form-check-label">
+                                 Dark Mode
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- The radio button has no auto option. --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdNoAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;color-mode-radio&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdNoAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      Light Mode
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdNoAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;color-mode-radio&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdNoAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      Dark Mode
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">&lt;!-- Radio with an auto option. --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;color-mode-radio-auto&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;auto&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_1&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      Auto
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;color-mode-radio-auto&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_2&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      Light Mode
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_3&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-input mode-switcher&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;color-mode-radio-auto&#34;</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdAutoColorMode_3&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;form-check-label&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>      Dark Mode
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+
+
+                  <h3 class="h4">Radio with button group</h3>
+                  <p>Combine button-like radio into a seamless looking button group.</p>
+                  <div class="bg-body-tertiary bg-opacity-30 py-4 px-3 mb-3 rounded">
+                     <div class="btn-group" role="group" aria-label="Radio button group">
+                        <input type="radio" class="btn-check mode-switcher" id="_dm-rdBtnGroupColorMode_1" value="auto" name="radio-color-mode" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-rdBtnGroupColorMode_1">Auto Mode</label>
+
+                        <input type="radio" class="btn-check mode-switcher" id="_dm-rdBtnGroupColorMode_2" value="light" name="radio-color-mode" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-rdBtnGroupColorMode_2">Light Mode</label>
+
+                        <input type="radio" class="btn-check mode-switcher" id="_dm-rdBtnGroupColorMode_3" value="dark" name="radio-color-mode" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="_dm-rdBtnGroupColorMode_3">Dark Mode</label>
+                     </div>
+                  </div>
+
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">div</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-group&#34;</span> <span style="color:#eed49f">role</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;group&#34;</span> <span style="color:#eed49f">aria-label</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;Radio button group&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_1&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;auto&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio-color-mode&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_1&#34;</span><span style="color:#cad3f5">&gt;</span>Auto Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_2&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;light&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio-color-mode&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_2&#34;</span><span style="color:#cad3f5">&gt;</span>Light Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">input</span> <span style="color:#eed49f">type</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio&#34;</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn-check mode-switcher&#34;</span> <span style="color:#eed49f">id</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_3&#34;</span> <span style="color:#eed49f">value</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;dark&#34;</span> <span style="color:#eed49f">name</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;radio-color-mode&#34;</span> <span style="color:#eed49f">autocomplete</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;off&#34;</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">&lt;</span><span style="color:#c6a0f6">label</span> <span style="color:#eed49f">class</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;btn btn-outline-primary&#34;</span> <span style="color:#eed49f">for</span><span style="color:#91d7e3">=</span><span style="color:#a6da95">&#34;_dm-rdBtnGroupColorMode_3&#34;</span><span style="color:#cad3f5">&gt;</span>Dark Mode<span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">label</span><span style="color:#cad3f5">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">&lt;/</span><span style="color:#c6a0f6">div</span><span style="color:#cad3f5">&gt;</span>
+</span></span></code></pre>
+                  </div>
+               </section>
+
+
+               <section class="mb-5 pt-3">
+                  <h2>Usage</h2>
+                  <p>Call the switcher via JavaScript</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#c6a0f6">const</span> <span style="color:#b7bdf8">colorModeList</span> <span style="color:#91d7e3">=</span> <span style="font-style:italic">document</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">querySelectorAll</span><span style="color:#cad3f5">(</span> <span style="color:#a6da95">&#34;.mode-switcher&#34;</span> <span style="color:#cad3f5">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#c6a0f6">const</span> <span style="color:#b7bdf8">elementList</span> <span style="color:#91d7e3">=</span> <span style="color:#cad3f5">[...</span><span style="color:#b7bdf8">colorModeList</span><span style="color:#cad3f5">].</span><span style="color:#b7bdf8">map</span><span style="color:#cad3f5">(</span> <span style="color:#b7bdf8">switcher</span> <span style="color:#cad3f5">=&gt;</span> <span style="color:#cad3f5">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#c6a0f6">new</span> <span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">(</span> <span style="color:#b7bdf8">switcher</span> <span style="color:#cad3f5">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">})</span>
+</span></span></code></pre>
+                  </div>
+
+               </section>
+
+               <section class="mb-5 pt-3">
+                  <h2 class="mt-5">Default variables</h2>
+                  <p>Switchers come with default variables, but sometimes those don't match what you need, so you just need to change them for the entire element or specific component.</p>
+
+                  <div class="table-responsive mb-5">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Default</th>
+                              <th>Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><code>event</code></td>
+                              <td>string</td>
+                              <td><code>change</code></td>
+                              <td>
+                                 The default event type will be fired when the component makes changes.
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><code>selectorSwitcher</code></td>
+                              <td>string</td>
+                              <td><code>.mode-switcher</code></td>
+                              <td>Default class name for the switcher.</td>
+                           </tr>
+                           <tr>
+                              <td><code>selectorSwitcherIcons</code></td>
+                              <td>string</td>
+                              <td><code>.mode-switcher-icon</code></td>
+                              <td>Icon class name used for toggling show/hide the icon when color mode changes.</td>
+                           </tr>
+                           <tr>
+                              <td><code>dataBSColorMode</code></td>
+                              <td>string</td>
+                              <td><code>data-bs-theme</code></td>
+                              <td>Default attribute provided by Bootstrap to indicate the currently selected color mode<br>(you may need this sometime when the attribute is changed)</td>
+                           </tr>
+                           <tr>
+                              <td><code>availableColorMode</code></td>
+                              <td>array</td>
+                              <td><code class="text-nowrap">[ "auto", "light", "dark" ]</code></td>
+                              <td>Available color modes</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <p class="mb-1">Get the default variables</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span>
+</span></span></code></pre>
+                  </div>
+
+
+                  <p class="mb-1">Modify the default variable for the entire switch.</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">selectorSwitcher</span> <span style="color:#91d7e3">=</span> <span style="color:#a6da95">&#34;.color-mode-toggler&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">selectorSwitcherIcons</span> <span style="color:#91d7e3">=</span> <span style="color:#a6da95">&#34;.color-mode-toggler-icon&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">Default</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">dataBSColorMode</span> <span style="color:#91d7e3">=</span> <span style="color:#a6da95">&#34;bs-theme-mode&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">...</span>
+</span></span></code></pre>
+                  </div>
+
+
+                  <p class="mb-1">For the specific component.</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#c6a0f6">const</span> <span style="color:#b7bdf8">mySwitcher</span> <span style="color:#91d7e3">=</span> <span style="color:#c6a0f6">new</span> <span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">(</span> <span style="font-style:italic">document</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">querySelector</span><span style="color:#cad3f5">(</span> <span style="color:#a6da95">&#34;.color-mode-toggler&#34;</span> <span style="color:#cad3f5">),</span> <span style="color:#cad3f5">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#b7bdf8">selectorSwitcherIcons</span><span style="color:#91d7e3">:</span> <span style="color:#a6da95">&#34;.color-mode-toggler-icon&#34;</span><span style="color:#cad3f5">,</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#b7bdf8">dataBSColorMode</span><span style="color:#91d7e3">:</span> <span style="color:#a6da95">&#34;bs-color-mode&#34;</span><span style="color:#cad3f5">,</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cad3f5">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#cad3f5">})</span>
+</span></span></code></pre>
+                  </div>
+
+               </section>
+
+               <section class="mb-5 pt-5">
+                  <h2>Methods</h2>
+                  <div class="table-responsive mb-5">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Method</th>
+                              <th>Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><code>dispose</code></td>
+                              <td>Destroys an element’s switcher. (Removes stored data on the DOM element)</td>
+                           </tr>
+                           <tr>
+                              <td><code>setColorMode</code></td>
+                              <td>Set the color mode to a new value. This method is also available in the static method, please check out the example code below.</td>
+                           </tr>
+                           <tr>
+                              <td><code>prefersTheme</code></td>
+                              <td>Static method which allows you to get the user's preferred theme. Please check out the example code below.</td>
+                           </tr>
+                           <tr>
+                              <td><code>update</code></td>
+                              <td>Updates the state of an element’s switcher.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <p class="mb-1">Set the Color Mode to auto, light, or dark.</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">setColorMode</span><span style="color:#cad3f5">(</span> <span style="color:#a6da95">&#34;auto&#34;</span> <span style="color:#cad3f5">)</span> <span style="color:#5b6078;font-style:italic">// &#34;auto&#34;, &#34;light&#34;, or &#34;dark&#34;
+</span></span></span></code></pre>
+                  </div>
+
+                  <p class="mb-1">Get the user's preferred theme</p>
+                  <div class="highlight">
+                     <pre tabindex="0" style="color:#f5a97f;background-color:#24273a;-moz-tab-size:3;-o-tab-size:3;tab-size:3;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#b7bdf8">nifty</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">ColorModeSwitcher</span><span style="color:#cad3f5">.</span><span style="color:#b7bdf8">prefersTheme</span>
+</span></span><span style="display:flex;"><span><span style="color:#5b6078;font-style:italic">// It will return a value: &#34;light&#34; or &#34;dark&#34; based on user system settings
+</span></span></span></code></pre>
+                  </div>
+               </section>
+
+               <section class="pt-5">
+                  <h2>Event</h2>
+                  <p>The Switcher events are fired at the toggling element and then bubbled up. You can also add event listeners to the document.</p>
+
+                  <div class="table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>Event type</th>
+                              <th>Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><code>change.nf.colormode</code></td>
+                              <td>Fired when the switcher was changed.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+
+
+            </div>
+         </div>
+
+
+         <!-- FOOTER -->
+
+         <footer class="pt-5 mt-auto">
+            <div class="content__boxed">
+               <div class="content__wrap py-2 d-flex flex-column flex-md-row align-items-md-center">
+                  <div class="text-nowrap text-body-emphasis fs-5">Copyright &copy; 2014 - 2024 <a href="https://themeon.net/" class="h5 link-primary text-decoration-none ms-1">ThemeOn</a></div>
+               </div>
+            </div>
+         </footer>
+
+         <!-- END - FOOTER -->
+
+
+      </section>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - CONTENTS -->
+
+
+      <!-- MAIN NAVIGATION -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <nav id="mainnav-container" class="mainnav">
+         <div class="mainnav__inner py-3">
+
+            <!-- Navigation menu -->
+            <div class="mainnav__top-content scrollable-content pb-5">
+
+
+               <!-- Base Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Base</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./index.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Welcome
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./introduction.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Introduction
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./changelogs.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Changelogs
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./quick-tips.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Quick Tips
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Base Category -->
+
+
+               <!-- Templates Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Templates</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./folders-structure.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Folders Structure
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./basic-template.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Basic Template
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./animations.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Animations
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./build-tools.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Build Tools
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Templates Category -->
+
+
+               <!-- Elements Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Elements</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./header.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Header
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Navigation</span>
+                        </a>
+
+                        <!-- Navigation submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./navigation-mini-and-maxi.html" class="nav-link">Mini &amp; Maxi</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-offcanvas.html" class="nav-link">OffCanvas</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./navigation-sticky-nav.html" class="nav-link">Sticky Nav</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Navigation submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+                     <!-- Link with submenu -->
+                     <li class="nav-item has-sub">
+
+
+                        <a href="#" class="mininav-toggle nav-link collapsed">
+                           <span class="nav-label ms-1">Sidebar</span>
+                        </a>
+
+                        <!-- Sidebar submenu list -->
+                        <ul class="mininav-content nav collapse">
+                           <li data-popper-arrow class="arrow"></li>
+                           <li class="nav-item">
+                              <a href="./sidebar-stuck.html" class="nav-link">Stuck</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-unite.html" class="nav-link">Unite</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-pinned.html" class="nav-link">Pinned</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./sidebar-more-options.html" class="nav-link">More Options</a>
+                           </li>
+
+                        </ul>
+                        <!-- END : Sidebar submenu list -->
+
+                     </li>
+                     <!-- END : Link with submenu -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Elements Category -->
+
+
+               <!-- Styles Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Styles</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scss.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              SCSS Files
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-schemes.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Schemes
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-palette.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Palette
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Styles Category -->
+
+
+               <!-- Components Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">Components</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./scroll-to-top.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Scroll to top
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./color-mode-switcher.html" class="nav-link mininav-toggle active">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Color Mode Switcher
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./main-navigation.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Main Navigation
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./sidebar-toggler.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Sidebar Toggler
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./toggler-buttons.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Toggler Buttons
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : Components Category -->
+
+
+               <!-- More Category -->
+               <div class="mainnav__categoriy py-3">
+                  <h6 class="mainnav__caption mt-0 fw-bold">More</h6>
+                  <ul class="mainnav__menu nav flex-column">
+
+                     <!-- Regular menu link -->
+                     <li class="nav-item">
+                        <a href="./third-party-plugins.html" class="nav-link mininav-toggle">
+                           <span class="nav-label mininav-content ms-1">
+                              <span data-popper-arrow class="arrow"></span>
+                              Third Party Plugins
+                           </span>
+                        </a>
+                     </li>
+                     <!-- END : Regular menu link -->
+
+
+                  </ul>
+               </div>
+               <!-- END : More Category -->
+
+
+            </div>
+            <!-- End - Navigation menu -->
+
+
+         </div>
+      </nav>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- END - MAIN NAVIGATION -->
+
+
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - PAGE CONTAINER -->
+
+
+   <!-- SCROLL TO TOP BUTTON -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <div class="scroll-container">
+      <a href="#root" class="scroll-page ratio ratio-1x1" aria-label="Scroll button"></a>
+   </div>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- END - SCROLL TO TOP BUTTON -->
+
+
+   <!-- JAVASCRIPTS -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+   <!-- Popper JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/popperjs/popper.min.js"></script>
+
+
+   <!-- Bootstrap JS [ OPTIONAL ] -->
+   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+
+
+   <!-- Nifty JS [ OPTIONAL ] -->
+   <script src="./assets/js/nifty.min.js"></script>
+
+
+</body>
+
+</html>

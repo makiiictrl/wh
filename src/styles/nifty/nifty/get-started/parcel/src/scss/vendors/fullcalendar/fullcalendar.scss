@@ -1,0 +1,53 @@
+// Import default bootstrap's and nifty's variables
+// ---------------------------------------------------------------------------------
+@import "../variables";
+
+
+
+// Overide
+// ---------------------------------------------------------------------------------
+.fc {
+   --fc-event-border-color:         var( --#{ $prefix }primary );
+   --fc-event-bg-color:             var( --#{ $prefix }primary );
+   --fc-page-bg-color:              var( --#{ $prefix }component-bg );
+
+
+   & {
+      color: var( --#{ $prefix }emphasis-color );
+   }
+
+
+   .fc-h-event {
+      border: 0;
+   }
+
+
+   .fc-header-toolbar {
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+
+
+   .fc-scrollgrid.fc-scrollgrid-liquid {
+      border-color: var( --#{ $prefix }border-color );
+   }
+
+   .fc-v-event {
+      border-color: transparent;
+      box-shadow: none;
+   }
+
+   .fc-theme-bootstrap5-shaded,
+   .fc-list-event:hover td {
+      background-color: transparent;
+   }
+
+   @at-root {
+      .fc-theme-bootstrap5 .fc-list,
+      .fc-theme-bootstrap5 .fc-scrollgrid,
+      .fc-theme-bootstrap5 td,
+      .fc-theme-bootstrap5 th {
+         border-color: var(--bs-border-color);
+      }
+   }
+}

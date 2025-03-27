@@ -1,0 +1,31 @@
+// GridJS - Resizable
+// ---------------------------------------------------------------------------------
+
+.gridjs-resizable {
+   bottom: 0;
+   position: absolute;
+   right: 0;
+   text-align: center;
+   top: 0;
+   transform: translateX(50%);
+   width: 1.5rem;
+
+
+
+   &:before {
+      background-color: $table-border-color;
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+   }
+
+
+   &:hover {
+      cursor: ew-resize;
+
+      &:before {
+         background-color: var(--#{ $prefix }primary);
+      }
+   }
+}

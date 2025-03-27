@@ -1,0 +1,48 @@
+
+// Overriding the default variable values
+// ---------------------------------------------------------------------------------
+// Example :
+// ---------------------------------------------------------------------------------
+// scss/nifty-admin/bootstrap/_variables.scss
+// $font-family-sans-serif:      "Arial";
+// $border-radius:               1.375rem;
+// $border-radius-sm:            1.15rem;
+
+
+// scss/nifty-admin/nifty/_variables.scss
+// $header-height:                           4.6875rem;
+// $mainnav-max-width:                       15.625rem;
+
+
+// scss/nifty-admin/colors/palette/_default.scss
+// $indigo:        #201760;
+
+
+// scss/nifty-admin/colors/schemes/_colors.scss
+// $color-schemes: (
+//    "gray":    #445169,
+//    "navy":    $indigo,
+//    // ...
+// );
+
+
+
+// Import all of Bootstrap's and Nifty's CSS
+// ---------------------------------------------------------------------------------
+@import "nifty-admin/bootstrap";
+@import "nifty-admin/nifty";
+
+
+
+// Custom styles
+// ---------------------------------------------------------------------------------
+// body {
+//    padding: 1.5rem;
+// }
+
+
+
+// Optional icons
+// ---------------------------------------------------------------------------------
+@import "../icons/line-icons/premium-line-icons.min.css";
+@import "../icons/solid-icons/premium-solid-icons.min.css";
