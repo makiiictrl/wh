@@ -1,25 +1,30 @@
-import React from "react";
-import Header from "./components/layouts/Header";
-import Footer from "./components/layouts/Footer";
+import React, { useState, useEffect } from 'react';
+import Header from './components/layouts/Header';
+import Nav from './components/layouts/Nav';
+import Footer from './components/layouts/Footer';
 
-export default App = () => {
-    return(
-        <div>
-            <Header>
+export default function App() {
+  // true means maximized ("mn--max"), false means minimized ("mn--min")
+  const [isMaximized, setIsMaximized] = useState(true);
 
-            </Header>
+  const toggleNav = () => {
+    setIsMaximized(prev => !prev);
+  };
 
-            <div className="card">
-                <div className="card-header bg-primary m-3">
-                    <h5>Test Card</h5>
-                </div>
-                <div className="card-body">
-                </div>
-            </div>
-            <Footer>
+  // Update the class on the root container defined in index.html
+  useEffect(() => {
+    const rootElement = document.getElementById('root');
+    if (rootElement) {
+      rootElement.classList.remove('mn--max', 'mn--min');
+      rootElement.classList.add(isMaximized ? 'mn--max' : 'mn--min');
+    }
+  }, [isMaximized]);
 
-            </Footer>
-        </div>
-        
-    )
+  return (
+    <>
+      <Header toggleNav={toggleNav} />
+      <Nav />
+      <Footer />
+    </>
+  );
 }
