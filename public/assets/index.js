@@ -1473,7 +1473,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React15 = require_react(), Internals = {
+        var React25 = require_react(), Internals = {
           d: {
             f: noop,
             r: function() {
@@ -1491,7 +1491,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React15.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React25.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -2947,7 +2947,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React15.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React25.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16417,13 +16417,13 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React15 = require_react(), ReactDOM2 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React25 = require_react(), ReactDOM2 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         Symbol.for("react.debug_trace_mode");
         var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
-        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React15.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React25.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19143,7 +19143,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React15.version;
+          var isomorphicReactPackageVersion = React25.version;
           if ("19.0.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -19444,11 +19444,11 @@
   });
 
   // src/index.js
-  var import_react5 = __toESM(require_react());
+  var import_react13 = __toESM(require_react());
   var import_client = __toESM(require_client());
 
   // src/App.js
-  var import_react4 = __toESM(require_react());
+  var import_react12 = __toESM(require_react());
 
   // src/components/layouts/Header.js
   var import_react = __toESM(require_react());
@@ -19531,49 +19531,34 @@
         "aria-controls": "usernav"
       },
       /* @__PURE__ */ import_react2.default.createElement("span", { className: "d-flex justify-content-center align-items-center" }, /* @__PURE__ */ import_react2.default.createElement("h5", { className: "mb-0 p-2", style: { color: "#ffffff" } }, "MICHAEL ANGELO MEDINA"))
-    ))), /* @__PURE__ */ import_react2.default.createElement("ul", { className: "mainnav__menu nav flex-column" }, /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/agent_user_menus", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-professor fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "User Menus"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/marketings", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-paperclip fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Marketing"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/transfer_slips", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-paper-plane fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Transfer Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/sample_slip_requests", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Request Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/sample_slip_issuances", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-file fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Issue Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/inventories/new", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-id-card fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Inventory Entry"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/inventories", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder-with-document fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Inventory Listing"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/item_masters", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder-organizing fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Item Master"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/packing_lists", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-numbering-list fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Packing List"))))), /* @__PURE__ */ import_react2.default.createElement("div", { className: "mainnav__bottom-content border-top pb-2" }, /* @__PURE__ */ import_react2.default.createElement("ul", { id: "mainnav", className: "mainnav__menu nav flex-column" }, /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement(
+    ))), /* @__PURE__ */ import_react2.default.createElement("ul", { className: "mainnav__menu nav flex-column" }, /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/agent_user_menus", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-professor fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "User Menus"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/marketings", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-paperclip fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Marketing"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/transfer_slips", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-paper-plane fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Transfer Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/request_slips", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Request Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/sample_slip_issuances", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-file fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Issue Slip"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/inventories/new", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-id-card fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Inventory Entry"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/inventories", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder-with-document fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Inventory Listing"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/item_masters", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-folder-organizing fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Item Master"))), /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "/#/packing_lists", className: "mininav nav-link" }, /* @__PURE__ */ import_react2.default.createElement("i", { className: "psi-numbering-list fs-5 me-2" }), /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Packing List"))))), /* @__PURE__ */ import_react2.default.createElement("div", { className: "mainnav__bottom-content border-top pb-2" }, /* @__PURE__ */ import_react2.default.createElement("ul", { id: "mainnav", className: "mainnav__menu nav flex-column" }, /* @__PURE__ */ import_react2.default.createElement("li", { className: "nav-item has-sub" }, /* @__PURE__ */ import_react2.default.createElement(
       "a",
       {
         href: "https://portal.cathaydrug.com/logout",
         className: "test nav-link mininav-toggle collapsed",
         "aria-expanded": "false"
       },
-      "Logout"
+      /* @__PURE__ */ import_react2.default.createElement("i", { className: "pli-unlock fs-5 me-2" }),
+      /* @__PURE__ */ import_react2.default.createElement("span", { className: "nav-label ms-1" }, "Logout")
     ))))));
   };
 
   // src/components/layouts/Footer.js
   var import_react3 = __toESM(require_react());
   var Footer_default = Footer = () => {
-    return /* @__PURE__ */ import_react3.default.createElement(import_react3.default.Fragment, null, /* @__PURE__ */ import_react3.default.createElement("footer", { className: "mt-auto" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "content__boxed" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "content__wrap py-3 py-md-1 d-flex flex-column align-items-center" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-nowrap mb-4 mb-md-0 text-center" }, "Cathay Warehouse \xA9", " ", /* @__PURE__ */ import_react3.default.createElement("a", { href: "#", className: "ms-1 btn-link fw-bold" }, "The Cathay Drug Company, Inc."))))));
+    return /* @__PURE__ */ import_react3.default.createElement("footer", { className: "mt-auto" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "content__boxed" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "content__wrap py-3 py-md-1 d-flex flex-column align-items-center" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-nowrap mb-4 mb-md-0 text-center" }, "Cathay Warehouse \xA9 ", /* @__PURE__ */ import_react3.default.createElement("a", { href: "#", className: "ms-1 btn-link fw-bold" }, "The Cathay Drug Company, Inc.")))));
   };
-
-  // src/App.js
-  function App() {
-    const [isMaximized, setIsMaximized] = (0, import_react4.useState)(true);
-    const toggleNav = () => {
-      setIsMaximized((prev) => !prev);
-    };
-    (0, import_react4.useEffect)(() => {
-      const rootElement = document.getElementById("root");
-      if (rootElement) {
-        rootElement.classList.remove("mn--max", "mn--min");
-        rootElement.classList.add(isMaximized ? "mn--max" : "mn--min");
-      }
-    }, [isMaximized]);
-    return /* @__PURE__ */ import_react4.default.createElement(import_react4.default.Fragment, null, /* @__PURE__ */ import_react4.default.createElement(Header_default, { toggleNav }), /* @__PURE__ */ import_react4.default.createElement(Nav_default, null), /* @__PURE__ */ import_react4.default.createElement(Footer_default, null));
-  }
 
   // node_modules/react-router/dist/development/chunk-GNGMS2XR.mjs
   var React32 = __toESM(require_react(), 1);
-  var React5 = __toESM(require_react(), 1);
+  var React4 = __toESM(require_react(), 1);
   var React22 = __toESM(require_react(), 1);
   var React10 = __toESM(require_react(), 1);
   var React9 = __toESM(require_react(), 1);
   var React42 = __toESM(require_react(), 1);
   var React8 = __toESM(require_react(), 1);
   var React7 = __toESM(require_react(), 1);
-  var React52 = __toESM(require_react(), 1);
+  var React5 = __toESM(require_react(), 1);
   var React6 = __toESM(require_react(), 1);
   var React11 = __toESM(require_react(), 1);
   var React12 = __toESM(require_react(), 1);
@@ -20176,35 +20161,35 @@
   ];
   var validRequestMethods = new Set(validRequestMethodsArr);
   var ResetLoaderDataSymbol = Symbol("ResetLoaderData");
-  var DataRouterContext = React5.createContext(null);
+  var DataRouterContext = React4.createContext(null);
   DataRouterContext.displayName = "DataRouter";
-  var DataRouterStateContext = React5.createContext(null);
+  var DataRouterStateContext = React4.createContext(null);
   DataRouterStateContext.displayName = "DataRouterState";
-  var ViewTransitionContext = React5.createContext({
+  var ViewTransitionContext = React4.createContext({
     isTransitioning: false
   });
   ViewTransitionContext.displayName = "ViewTransition";
-  var FetchersContext = React5.createContext(
+  var FetchersContext = React4.createContext(
     /* @__PURE__ */ new Map()
   );
   FetchersContext.displayName = "Fetchers";
-  var AwaitContext = React5.createContext(null);
+  var AwaitContext = React4.createContext(null);
   AwaitContext.displayName = "Await";
-  var NavigationContext = React5.createContext(
+  var NavigationContext = React4.createContext(
     null
   );
   NavigationContext.displayName = "Navigation";
-  var LocationContext = React5.createContext(
+  var LocationContext = React4.createContext(
     null
   );
   LocationContext.displayName = "Location";
-  var RouteContext = React5.createContext({
+  var RouteContext = React4.createContext({
     outlet: null,
     matches: [],
     isDataRoute: false
   });
   RouteContext.displayName = "Route";
-  var RouteErrorContext = React5.createContext(null);
+  var RouteErrorContext = React4.createContext(null);
   RouteErrorContext.displayName = "RouteError";
   var ENABLE_DEV_WARNINGS = true;
   function useHref(to, { relative } = {}) {
@@ -20308,6 +20293,9 @@
       ),
       [to, routePathnamesJson, locationPathname, relative]
     );
+  }
+  function useRoutes(routes, locationArg) {
+    return useRoutesImpl(routes, locationArg);
   }
   function useRoutesImpl(routes, locationArg, dataRouterState, future) {
     invariant(
@@ -20696,6 +20684,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }) {
     return useRoutesImpl(routes, void 0, state, future);
   }
+  function Route(_props) {
+    invariant(
+      false,
+      `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`
+    );
+  }
   function Router({
     basename: basenameProp = "/",
     children = null,
@@ -20752,6 +20746,62 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return null;
     }
     return /* @__PURE__ */ React32.createElement(NavigationContext.Provider, { value: navigationContext }, /* @__PURE__ */ React32.createElement(LocationContext.Provider, { children, value: locationContext }));
+  }
+  function Routes({
+    children,
+    location
+  }) {
+    return useRoutes(createRoutesFromChildren(children), location);
+  }
+  function createRoutesFromChildren(children, parentPath = []) {
+    let routes = [];
+    React32.Children.forEach(children, (element, index) => {
+      if (!React32.isValidElement(element)) {
+        return;
+      }
+      let treePath = [...parentPath, index];
+      if (element.type === React32.Fragment) {
+        routes.push.apply(
+          routes,
+          createRoutesFromChildren(element.props.children, treePath)
+        );
+        return;
+      }
+      invariant(
+        element.type === Route,
+        `[${typeof element.type === "string" ? element.type : element.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`
+      );
+      invariant(
+        !element.props.index || !element.props.children,
+        "An index route cannot have child routes."
+      );
+      let route = {
+        id: element.props.id || treePath.join("-"),
+        caseSensitive: element.props.caseSensitive,
+        element: element.props.element,
+        Component: element.props.Component,
+        index: element.props.index,
+        path: element.props.path,
+        loader: element.props.loader,
+        action: element.props.action,
+        hydrateFallbackElement: element.props.hydrateFallbackElement,
+        HydrateFallback: element.props.HydrateFallback,
+        errorElement: element.props.errorElement,
+        ErrorBoundary: element.props.ErrorBoundary,
+        hasErrorBoundary: element.props.hasErrorBoundary === true || element.props.ErrorBoundary != null || element.props.errorElement != null,
+        shouldRevalidate: element.props.shouldRevalidate,
+        handle: element.props.handle,
+        lazy: element.props.lazy
+      };
+      if (element.props.children) {
+        route.children = createRoutesFromChildren(
+          element.props.children,
+          treePath
+        );
+      }
+      routes.push(route);
+    });
+    return routes;
   }
   var defaultMethod = "get";
   var defaultEncType = "application/x-www-form-urlencoded";
@@ -21823,11 +21873,582 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   var encoder = new TextEncoder();
 
+  // src/components/user_menus/Index.js
+  var import_react4 = __toESM(require_react());
+  var Index_default = Index = () => {
+    const [isShowOpen, setIsShowOpen] = (0, import_react4.useState)(false);
+    return /* @__PURE__ */ import_react4.default.createElement("div", { className: "card m-3 p-3" }, /* @__PURE__ */ import_react4.default.createElement("h3", { className: "text-primary" }, "Listing of Agent User Menu"), /* @__PURE__ */ import_react4.default.createElement("form", { method: "get", action: "/agent_user_menus", className: "mb-4" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "col-md-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react4.default.createElement("label", { htmlFor: "agent_id" }, "Agent ID:"), /* @__PURE__ */ import_react4.default.createElement(
+      "input",
+      {
+        id: "agent_id",
+        name: "agent_id",
+        type: "text",
+        className: "form-control"
+      }
+    ))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "col-md-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react4.default.createElement("label", { htmlFor: "menu_description" }, "Menu Description:"), /* @__PURE__ */ import_react4.default.createElement(
+      "input",
+      {
+        id: "menu_description",
+        name: "menu_description",
+        type: "text",
+        className: "form-control"
+      }
+    ))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "col-md-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "form-group mt-3 d-flex align-items-center" }, /* @__PURE__ */ import_react4.default.createElement(
+      "button",
+      {
+        type: "submit",
+        className: "btn btn-primary text-nowrap me-2"
+      },
+      "Show Agent User Menu"
+    ), /* @__PURE__ */ import_react4.default.createElement(
+      "button",
+      {
+        id: "clear_filter",
+        type: "button",
+        className: "btn btn-secondary ml-3 text-nowrap"
+      },
+      "Clear Filter"
+    ))))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "card-header bg-primary d-flex align-items-center justify-content-between py-2 px-3" }, /* @__PURE__ */ import_react4.default.createElement("h5", { className: "mb-0 text-white" }, "Agent User"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "d-flex align-items-center ms-auto gap-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "btn-group" }, /* @__PURE__ */ import_react4.default.createElement(
+      "button",
+      {
+        type: "button",
+        className: `btn btn-light dropdown-toggle btn-md ${isShowOpen ? "show" : ""}`,
+        onClick: () => setIsShowOpen((prev) => !prev),
+        onBlur: () => setIsShowOpen((prev) => !prev),
+        "aria-expanded": isShowOpen
+      },
+      "Show only"
+    ), /* @__PURE__ */ import_react4.default.createElement(
+      "ul",
+      {
+        className: `dropdown-menu ${isShowOpen ? "show" : ""}`,
+        style: {
+          position: "absolute",
+          inset: "40px auto auto 0px",
+          margin: "0px",
+          // width: 'fit-content',
+          minWidth: "105px",
+          transform: isShowOpen ? "translateY(0px)" : "translateY(20px)",
+          opacity: isShowOpen ? 1 : 0,
+          transition: "opacity 0.3s ease, transform 0.3s ease"
+        },
+        "data-popper-placement": "bottom-start"
+      },
+      /* @__PURE__ */ import_react4.default.createElement("li", { className: "dropdown-item" }, "10"),
+      /* @__PURE__ */ import_react4.default.createElement("li", { className: "dropdown-item" }, "30"),
+      /* @__PURE__ */ import_react4.default.createElement("li", { className: "dropdown-item" }, "50")
+    )), /* @__PURE__ */ import_react4.default.createElement(Link, { to: "/agent_user_menus/new", className: "btn btn-success btn-md" }, "New Agent User Menu"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react4.default.createElement("table", { className: "table table-striped table-bordered table-hover" }, /* @__PURE__ */ import_react4.default.createElement("thead", null, /* @__PURE__ */ import_react4.default.createElement("tr", null, /* @__PURE__ */ import_react4.default.createElement("th", null, "Agent ID"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Menu ID"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Menu Description"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Create"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Read"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Update"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Delete"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Print"), /* @__PURE__ */ import_react4.default.createElement("th", null, "Actions"))), /* @__PURE__ */ import_react4.default.createElement("tbody", null, /* @__PURE__ */ import_react4.default.createElement("tr", null, /* @__PURE__ */ import_react4.default.createElement("td", null, "agent_id"), /* @__PURE__ */ import_react4.default.createElement("td", null, "agent_menu_id"), /* @__PURE__ */ import_react4.default.createElement("td", null, "menu"), /* @__PURE__ */ import_react4.default.createElement("td", null, "YES/NO"), /* @__PURE__ */ import_react4.default.createElement("td", null, "YES/NO"), /* @__PURE__ */ import_react4.default.createElement("td", null, "YES/NO"), /* @__PURE__ */ import_react4.default.createElement("td", null, "YES/NO"), /* @__PURE__ */ import_react4.default.createElement("td", null, "YES/NO"), /* @__PURE__ */ import_react4.default.createElement("td", { className: "d-flex align-items-center" }, /* @__PURE__ */ import_react4.default.createElement(
+      Link,
+      {
+        to: "/agent_user_menus/edit",
+        className: "btn btn-warning me-2 btn-sm"
+      },
+      "Edit"
+    ), /* @__PURE__ */ import_react4.default.createElement("button", { className: "btn btn-danger me-2 btn-sm" }, "Destroy"))))))), /* @__PURE__ */ import_react4.default.createElement("nav", { className: "d-flex justify-content-center mt-4" }));
+  };
+
+  // src/components/user_menus/New.js
+  var import_react5 = __toESM(require_react());
+  var New_default = New = () => {
+    return /* @__PURE__ */ import_react5.default.createElement("div", { class: "container nifty-container mt-3" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "row justify-content-center" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "col-md-4" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "alert alert-primary d-flex align-items-center m-2", role: "alert" }, /* @__PURE__ */ import_react5.default.createElement("p", { class: "mb-0 text-center text-success" }, "Placeholder: Notice")), /* @__PURE__ */ import_react5.default.createElement("div", { class: "card m-2" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "card-header bg-primary text-white" }, /* @__PURE__ */ import_react5.default.createElement("h4", { class: "mb-0 text-white", id: "card-title" }, "New Agent User Menu")), /* @__PURE__ */ import_react5.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react5.default.createElement("datalist", { id: "menu" }), /* @__PURE__ */ import_react5.default.createElement("datalist", { id: "agent" }), /* @__PURE__ */ import_react5.default.createElement("h5", { class: "mb-3 border-bottom pb-2" }, "Agent User Menu Details"), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "Menu ID"), /* @__PURE__ */ import_react5.default.createElement("div", { class: "input-group" }, /* @__PURE__ */ import_react5.default.createElement("span", { class: "input-group-text" }, /* @__PURE__ */ import_react5.default.createElement("i", { class: "pli-notepad" })), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-control", tabIndex: 1, list: "menu", autoComplete: false, required: true }))), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "input-group" }, /* @__PURE__ */ import_react5.default.createElement("span", { class: "input-group-text" }, /* @__PURE__ */ import_react5.default.createElement("i", { class: "pli-male-2" })), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-control", tabIndex: 1, list: "agent", autoComplete: false, required: true }))), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "Grant Access"), /* @__PURE__ */ import_react5.default.createElement("div", { class: "input-group" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "col-sm-9 py-2 ms-2" }, /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-check mb-2" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "User Create"), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-check-input" })), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-check mb-2" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "User Read"), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-check-input" })), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-check mb-2" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "User Update"), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-check-input" })), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-check mb-2" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "User Delete"), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-check-input" })), /* @__PURE__ */ import_react5.default.createElement("div", { class: "form-check mb-2" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "User Print"), /* @__PURE__ */ import_react5.default.createElement("input", { className: "form-check-input" }))))), /* @__PURE__ */ import_react5.default.createElement("div", { class: "d-flex justify-content-between" }, /* @__PURE__ */ import_react5.default.createElement(Link, { to: "/agent_user_menus", className: "btn btn-secondary" }, "Back"), /* @__PURE__ */ import_react5.default.createElement(Link, { className: "btn btn-success" }, "Save")))))));
+  };
+
+  // src/components/transfer_slips/Index.js
+  var import_react6 = __toESM(require_react());
+  var Index_default2 = Index = () => {
+    const [isShowOpen, setIsShowOpen] = (0, import_react6.useState)(false);
+    return /* @__PURE__ */ import_react6.default.createElement("div", { class: "card m-3 p-3" }, /* @__PURE__ */ import_react6.default.createElement("h3", { class: "text-primary" }, "Listing Transfer Slip"), /* @__PURE__ */ import_react6.default.createElement("form", { method: "get", action: "/transfer_slips", class: "mb-4" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "row" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react6.default.createElement("label", null, "Company Code :"), /* @__PURE__ */ import_react6.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react6.default.createElement("option", { value: "" }, "Please select..."), /* @__PURE__ */ import_react6.default.createElement("option", { value: "1" }, "CDCI"), /* @__PURE__ */ import_react6.default.createElement("option", { value: "5" }, "CYDC"), /* @__PURE__ */ import_react6.default.createElement("option", { value: "2" }, "YSS")))), /* @__PURE__ */ import_react6.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react6.default.createElement("label", null, "TS Number:"), /* @__PURE__ */ import_react6.default.createElement(
+      "input",
+      {
+        id: "ts_number",
+        name: "ts_number",
+        type: "text",
+        value: "",
+        class: "form-control"
+      }
+    ))), /* @__PURE__ */ import_react6.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react6.default.createElement("label", null, "TS Type:"), /* @__PURE__ */ import_react6.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react6.default.createElement("option", { value: "" }, "Please select..."), /* @__PURE__ */ import_react6.default.createElement("option", { value: "Commercial" }, "Commercial"), /* @__PURE__ */ import_react6.default.createElement("option", { value: "Sample" }, "Sample"), /* @__PURE__ */ import_react6.default.createElement("option", { value: "Other" }, "Other")))), /* @__PURE__ */ import_react6.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react6.default.createElement("label", null, "Lot Number:"), /* @__PURE__ */ import_react6.default.createElement(
+      "input",
+      {
+        id: "transfer_slip_lot_number",
+        name: "transfer_slip_lot_number",
+        type: "text",
+        value: "",
+        class: "form-control"
+      }
+    ))), /* @__PURE__ */ import_react6.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "form-group mt-3 d-flex align-items-center" }, /* @__PURE__ */ import_react6.default.createElement("button", { type: "submit", class: "btn btn-primary text-nowrap me-2" }, "Show Transfer slips"), /* @__PURE__ */ import_react6.default.createElement(
+      "button",
+      {
+        id: "clear_filter",
+        type: "button",
+        class: "btn btn-secondary text-nowrap ml-3"
+      },
+      "Clear Filter"
+    )))), /* @__PURE__ */ import_react6.default.createElement("div", null)), /* @__PURE__ */ import_react6.default.createElement("div", { class: "card" }, /* @__PURE__ */ import_react6.default.createElement("div", { class: "card-header bg-primary text-white d-flex align-items-center justify-content-between py-2 px-3" }, /* @__PURE__ */ import_react6.default.createElement("h5", { class: "mb-0 text-white" }, "Transfer Slip"), /* @__PURE__ */ import_react6.default.createElement("div", { class: "d-flex align-items-center ms-auto gap-2" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "btn-group" }, /* @__PURE__ */ import_react6.default.createElement(
+      "button",
+      {
+        type: "button",
+        className: `btn btn-light dropdown-toggle btn-md ${isShowOpen ? "show" : ""}`,
+        onClick: () => setIsShowOpen((prev) => !prev),
+        onBlur: () => setIsShowOpen((prev) => !prev),
+        "aria-expanded": isShowOpen
+      },
+      "Show only"
+    ), /* @__PURE__ */ import_react6.default.createElement(
+      "ul",
+      {
+        className: `dropdown-menu ${isShowOpen ? "show" : ""}`,
+        style: {
+          position: "absolute",
+          inset: "40px auto auto 0px",
+          margin: "0px",
+          // width: 'fit-content',
+          minWidth: "105px",
+          transform: isShowOpen ? "translateY(0px)" : "translateY(20px)",
+          opacity: isShowOpen ? 1 : 0,
+          transition: "opacity 0.3s ease, transform 0.3s ease"
+        },
+        "data-popper-placement": "bottom-start"
+      },
+      /* @__PURE__ */ import_react6.default.createElement("li", { className: "dropdown-item" }, "10"),
+      /* @__PURE__ */ import_react6.default.createElement("li", { className: "dropdown-item" }, "30"),
+      /* @__PURE__ */ import_react6.default.createElement("li", { className: "dropdown-item" }, "50")
+    )), /* @__PURE__ */ import_react6.default.createElement("div", { class: "d-flex align-items-center" }, /* @__PURE__ */ import_react6.default.createElement(
+      "button",
+      {
+        class: "btn btn-light",
+        type: "button",
+        id: "print_transfer_slips_blank",
+        title: "Print Blank Transfer Slip"
+      },
+      /* @__PURE__ */ import_react6.default.createElement("i", { class: "psi-printer", "aria-hidden": "true" }),
+      /* @__PURE__ */ import_react6.default.createElement("span", { class: "visually-hidden" }, "Manage")
+    )))), /* @__PURE__ */ import_react6.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react6.default.createElement("table", { class: "table table-striped table-bordered table-hover" }, /* @__PURE__ */ import_react6.default.createElement("thead", null, /* @__PURE__ */ import_react6.default.createElement("tr", null, /* @__PURE__ */ import_react6.default.createElement("th", null, "Comp"), /* @__PURE__ */ import_react6.default.createElement("th", null, "TS Number"), /* @__PURE__ */ import_react6.default.createElement("th", null, "TS Type"), /* @__PURE__ */ import_react6.default.createElement("th", null, "To"), /* @__PURE__ */ import_react6.default.createElement("th", null, "Transferred"), /* @__PURE__ */ import_react6.default.createElement("th", null, "Transferred Date"), /* @__PURE__ */ import_react6.default.createElement("th", null, "Received"), /* @__PURE__ */ import_react6.default.createElement("th", null, "Received Date"), /* @__PURE__ */ import_react6.default.createElement("th", null, "Actions"))), /* @__PURE__ */ import_react6.default.createElement("tbody", null, /* @__PURE__ */ import_react6.default.createElement("tr", null, /* @__PURE__ */ import_react6.default.createElement("td", null, "company_code"), /* @__PURE__ */ import_react6.default.createElement("td", null, "transfer_slip_number"), /* @__PURE__ */ import_react6.default.createElement("td", null, "transfer_slip_type"), /* @__PURE__ */ import_react6.default.createElement("td", null, "transfer_to"), /* @__PURE__ */ import_react6.default.createElement("td", null, "transfer_by"), /* @__PURE__ */ import_react6.default.createElement("td", null, "transfer_by_date"), /* @__PURE__ */ import_react6.default.createElement("td", null, "received_by"), /* @__PURE__ */ import_react6.default.createElement("td", null, "received_by_date"), /* @__PURE__ */ import_react6.default.createElement("td", { class: "d-flex align-items-center" }, /* @__PURE__ */ import_react6.default.createElement(Link, { to: "/transfer_slips/show", className: "btn btn-info me-1 btn-sm" }, "Show"), /* @__PURE__ */ import_react6.default.createElement(Link, { to: "/transfer_slips/edit", className: "btn btn-warning me-1 btn-sm" }, "Edit"), /* @__PURE__ */ import_react6.default.createElement(Link, { to: "/transfer_slips/print", className: "btn btn-light me-1 btn-sm" }, "Print"), /* @__PURE__ */ import_react6.default.createElement(Link, { className: "btn btn-danger btn-sm" }, "Delete"))))))), /* @__PURE__ */ import_react6.default.createElement("nav", { class: "d-flex justify-content-center mt-4" }));
+  };
+
+  // src/components/transfer_slips/Show.js
+  var import_react7 = __toESM(require_react());
+  var Show_default = Show = () => {
+    return /* @__PURE__ */ import_react7.default.createElement("div", { class: "container" }, /* @__PURE__ */ import_react7.default.createElement("div", { class: "card mt-4" }, /* @__PURE__ */ import_react7.default.createElement("div", { class: "card-header bg-primary text-white" }, /* @__PURE__ */ import_react7.default.createElement("h4", { class: "mb-0 text-white" }, "Transfer Slip Information")), /* @__PURE__ */ import_react7.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react7.default.createElement("div", { class: "table-responsive" }, /* @__PURE__ */ import_react7.default.createElement("table", { class: "table table-striped table-bordered" }, /* @__PURE__ */ import_react7.default.createElement("tbody", null, /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "Company"), /* @__PURE__ */ import_react7.default.createElement("td", null, "company_code")), /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "TS Number"), /* @__PURE__ */ import_react7.default.createElement("td", null, "transfer_slip_number")), /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "TS Type"), /* @__PURE__ */ import_react7.default.createElement("td", null, "transfer_slip_type")), /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "TO"), /* @__PURE__ */ import_react7.default.createElement("td", null, "transfer_to")), /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "Transferred"), /* @__PURE__ */ import_react7.default.createElement("td", null, "transferred_date")), /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "Received"), /* @__PURE__ */ import_react7.default.createElement("td", null, "received_date"))))), /* @__PURE__ */ import_react7.default.createElement("div", { class: "table-responsive" }, /* @__PURE__ */ import_react7.default.createElement("table", { class: "table table-bordered table-hover" }, /* @__PURE__ */ import_react7.default.createElement("thead", { class: "thead-light" }, /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("th", null, "ITEMS"), /* @__PURE__ */ import_react7.default.createElement("th", null, "LOT NUMBER"), /* @__PURE__ */ import_react7.default.createElement("th", null, "MFG. DATE"), /* @__PURE__ */ import_react7.default.createElement("th", null, "EXP DATE"), /* @__PURE__ */ import_react7.default.createElement("th", { class: "text-right" }, "QUANTITY"), /* @__PURE__ */ import_react7.default.createElement("th", { nowrap: true }, "J.O. NO."), /* @__PURE__ */ import_react7.default.createElement("th", null, "REMARKS"))), /* @__PURE__ */ import_react7.default.createElement("tbody", null, /* @__PURE__ */ import_react7.default.createElement("tr", null, /* @__PURE__ */ import_react7.default.createElement("td", null, "product_description"), /* @__PURE__ */ import_react7.default.createElement("td", null, "lot_number"), /* @__PURE__ */ import_react7.default.createElement("td", null, "mfg_date"), /* @__PURE__ */ import_react7.default.createElement("td", null, "exp_date"), /* @__PURE__ */ import_react7.default.createElement("td", null, "quantity"), /* @__PURE__ */ import_react7.default.createElement("td", null, "job_order_number"), /* @__PURE__ */ import_react7.default.createElement("td", null, "remarks"))))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "d-flex justify-content-between" }, /* @__PURE__ */ import_react7.default.createElement("div", null, /* @__PURE__ */ import_react7.default.createElement(Link, { to: "/transfer_slips", className: "btn btn-secondary" }, "Back")), /* @__PURE__ */ import_react7.default.createElement("div", null, /* @__PURE__ */ import_react7.default.createElement(Link, { to: "", className: "btn btn-primary me-2" }, "Print"), /* @__PURE__ */ import_react7.default.createElement(Link, { to: "/transfer_slips/edit", className: "btn btn-warning" }, "Edit"))))));
+  };
+
+  // src/components/transfer_slips/Edit.js
+  var import_react8 = __toESM(require_react());
+  var Edit_default = Edit = () => {
+    return /* @__PURE__ */ import_react8.default.createElement("div", { class: "container mt-4" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "card-header bg-primary text-white" }, /* @__PURE__ */ import_react8.default.createElement("h4", { class: "mb-0 text-white" }, "Transfer Slip")), /* @__PURE__ */ import_react8.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react8.default.createElement("form", null, /* @__PURE__ */ import_react8.default.createElement("div", { class: "mb-4" }, /* @__PURE__ */ import_react8.default.createElement("h5", { class: "mb-3 border-bottom pb-2" }, "Transfer Slip Details"), /* @__PURE__ */ import_react8.default.createElement("div", { class: "row" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "col-md-6" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Company"), /* @__PURE__ */ import_react8.default.createElement("div", { class: "input-group" }, /* @__PURE__ */ import_react8.default.createElement("span", { class: "input-group-text" }, /* @__PURE__ */ import_react8.default.createElement("i", { class: "pli-building" })), /* @__PURE__ */ import_react8.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react8.default.createElement("option", { value: "" }), /* @__PURE__ */ import_react8.default.createElement("option", { value: "1" }, "CDCI"), /* @__PURE__ */ import_react8.default.createElement("option", { value: "5" }, "CYDC")))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Transfer Slip Number"), /* @__PURE__ */ import_react8.default.createElement("input", { type: "number", className: "form-control" })), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Company Code"), /* @__PURE__ */ import_react8.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react8.default.createElement("option", { value: "" }), /* @__PURE__ */ import_react8.default.createElement("option", { value: "1" }, "CDCI"), /* @__PURE__ */ import_react8.default.createElement("option", { value: "5" }, "CYDC"))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Received by:"), /* @__PURE__ */ import_react8.default.createElement("input", { className: "form-control", type: "date" }))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "col-md-6" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "col-md-12" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Transfer Slip Type"), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("div", { class: "input-group" }, /* @__PURE__ */ import_react8.default.createElement("span", { class: "input-group-text" }, /* @__PURE__ */ import_react8.default.createElement("i", { class: "pli-file" })), /* @__PURE__ */ import_react8.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react8.default.createElement("option", { value: "" }, "Please select..."), /* @__PURE__ */ import_react8.default.createElement("option", { value: "" })))))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Transferred by:"), /* @__PURE__ */ import_react8.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react8.default.createElement("option", { value: "" }, "Please select..."), /* @__PURE__ */ import_react8.default.createElement("option", { value: "" }))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Transferred by date:"), /* @__PURE__ */ import_react8.default.createElement("input", { id: "transfer_slip_transferred_by_date", name: "transfer_slip[transferred_by_date]", type: "date", value: "<%= @transfer_slip.transferred_by_date %>", class: "form-control" })), /* @__PURE__ */ import_react8.default.createElement("div", { class: "form-group mb-3" }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Transferred by date:"), /* @__PURE__ */ import_react8.default.createElement("input", { id: "transfer_slip_received_by_date", name: "transfer_slip[received_by_date]", type: "date", value: "<%= @transfer_slip.received_by_date %>", class: "form-control" }))))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "mb-4" }, /* @__PURE__ */ import_react8.default.createElement("h5", { class: "mb-3 border-bottom pb-2" }, "Items Details"), /* @__PURE__ */ import_react8.default.createElement("div", { class: "table-responsive" }, /* @__PURE__ */ import_react8.default.createElement("table", { class: "table table-bordered table-hover", id: "TableDetails" }, /* @__PURE__ */ import_react8.default.createElement("thead", null, /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("th", null, "LOT NUMBER"), /* @__PURE__ */ import_react8.default.createElement("th", null, "ITEMS"), /* @__PURE__ */ import_react8.default.createElement("th", null, "MFG. DATE"), /* @__PURE__ */ import_react8.default.createElement("th", null, "EXP DATE"), /* @__PURE__ */ import_react8.default.createElement("th", null, "QUANTITY"), /* @__PURE__ */ import_react8.default.createElement("th", null, "J.O. NO."), /* @__PURE__ */ import_react8.default.createElement("th", null, "REMARKS"), /* @__PURE__ */ import_react8.default.createElement("th", null, "ACTION"))), /* @__PURE__ */ import_react8.default.createElement("tbody", null, /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_lot_number", placeholder: "Lot Number", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_product_description", placeholder: "Product Description", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { name: "transfer_slip_detail[][manufacturing_date]", id: "transfer_slip_detail_manufacturing_date", type: "date", tabindex: "0", value: "", class: "form-control" })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { name: "transfer_slip_detail[][expiry_date]", id: "transfer_slip_detail_expiry_date", type: "date", tabindex: "0", value: "", class: "form-control" })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_quantity", placeholder: "Quantity", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_job_order_number", placeholder: "Job Order Number", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_remarks", placeholder: "Remarks", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", { class: "text-center" }, /* @__PURE__ */ import_react8.default.createElement("input", { class: "btn btn-danger", id: "deleteDetails<%= i %>", type: "button", value: "Delete" }))), /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_lot_number", placeholder: "Lot Number", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_select_product_description", placeholder: "Select Product Description", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_manufacturing_date", placeholder: "Manufacturing Date", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { name: "transfer_slip_detail[][expiry_date]", id: "transfer_slip_detail_expiry_date", type: "date", tabindex: "0", class: "form-control" })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_quantity", placeholder: "Quantity", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_job_order_number", placeholder: "Job Order Number", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("input", { type: "text", className: "form-control transfer_slips_remarks", placeholder: "Remarks", tabIndex: 0 })), /* @__PURE__ */ import_react8.default.createElement("td", { class: "text-center" }, /* @__PURE__ */ import_react8.default.createElement("input", { class: "btn btn-danger", id: "deleteDetails<%= i %>", type: "button", value: "Delete" }))))), /* @__PURE__ */ import_react8.default.createElement("input", { class: "btn btn-info", id: "addNew", type: "button", value: "Add Row", tabindex: "0" }))), /* @__PURE__ */ import_react8.default.createElement("div", { class: "d-flex justify-content-between" }, /* @__PURE__ */ import_react8.default.createElement(Link, { to: "/transfer_slips/", className: "btn btn-secondary" }, "Back"), /* @__PURE__ */ import_react8.default.createElement(Link, { className: "btn btn-success" }, "Save Transfer Slip"))))));
+  };
+
+  // src/components/request_slips/Index.js
+  var import_react9 = __toESM(require_react());
+  var Index_default3 = Index = () => {
+    const [isShowOpen, setIsShowOpen] = (0, import_react9.useState)(false);
+    return /* @__PURE__ */ import_react9.default.createElement("div", { class: "card m-3 p-3" }, /* @__PURE__ */ import_react9.default.createElement("h3", { class: "text-primary" }, "Listing Request Slip"), /* @__PURE__ */ import_react9.default.createElement("form", { method: "get", action: "/sample_slip_requests", class: "mb-4" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "row" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react9.default.createElement("label", { for: "request_number" }, "Request Number:"), /* @__PURE__ */ import_react9.default.createElement("input", { id: "request_number", name: "request_number", type: "text", class: "form-control", value: "" }))), /* @__PURE__ */ import_react9.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react9.default.createElement("label", { for: "request_date" }, "Request Date:"), /* @__PURE__ */ import_react9.default.createElement("input", { id: "request_date", name: "request_date", type: "date", class: "form-control", value: "" }))), /* @__PURE__ */ import_react9.default.createElement("div", { class: "col-md-2" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "form-group mt-3 d-flex align-items-center" }, /* @__PURE__ */ import_react9.default.createElement("button", { type: "submit", class: "btn btn-primary text-nowrap me-2" }, "Show Request Slip"), /* @__PURE__ */ import_react9.default.createElement("button", { id: "clear_filter", type: "button", class: "btn btn-secondary ml-3 text-nowrap" }, "Clear Filter"))))), /* @__PURE__ */ import_react9.default.createElement("div", { class: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { class: "card-header bg-primary d-flex align-items-center justify-content-between py-2 px-3" }, /* @__PURE__ */ import_react9.default.createElement("h5", { class: "mb-0 text-white" }, "Slip Requests"), /* @__PURE__ */ import_react9.default.createElement("div", { class: "d-flex align-items-center ms-auto gap-2" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "btn-group" }, /* @__PURE__ */ import_react9.default.createElement(
+      "button",
+      {
+        type: "button",
+        className: `btn btn-light dropdown-toggle btn-md ${isShowOpen ? "show" : ""}`,
+        onClick: () => setIsShowOpen((prev) => !prev),
+        onBlur: () => setIsShowOpen((prev) => !prev),
+        "aria-expanded": isShowOpen
+      },
+      "Show only"
+    ), /* @__PURE__ */ import_react9.default.createElement(
+      "ul",
+      {
+        className: `dropdown-menu ${isShowOpen ? "show" : ""}`,
+        style: {
+          position: "absolute",
+          inset: "40px auto auto 0px",
+          margin: "0px",
+          // width: 'fit-content',
+          minWidth: "105px",
+          transform: isShowOpen ? "translateY(0px)" : "translateY(20px)",
+          opacity: isShowOpen ? 1 : 0,
+          transition: "opacity 0.3s ease, transform 0.3s ease"
+        },
+        "data-popper-placement": "bottom-start"
+      },
+      /* @__PURE__ */ import_react9.default.createElement("li", { className: "dropdown-item" }, "10"),
+      /* @__PURE__ */ import_react9.default.createElement("li", { className: "dropdown-item" }, "30"),
+      /* @__PURE__ */ import_react9.default.createElement("li", { className: "dropdown-item" }, "50")
+    )), /* @__PURE__ */ import_react9.default.createElement(Link, { to: "/request_slip/new", className: "btn btn-success" }, "New Request Slip"))), /* @__PURE__ */ import_react9.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react9.default.createElement("table", { class: "table table-striped table-bordered table-hover" }, /* @__PURE__ */ import_react9.default.createElement("thead", null, /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("th", null, "Comp"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Request Number"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Request Date"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Employee Name"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Address"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Purpose of Request"), /* @__PURE__ */ import_react9.default.createElement("th", { colspan: "2" }, "Actions"))), /* @__PURE__ */ import_react9.default.createElement("tbody", null, /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("td", null, "company_code"), /* @__PURE__ */ import_react9.default.createElement("td", null, "request_number"), /* @__PURE__ */ import_react9.default.createElement("td", null, "request_date"), /* @__PURE__ */ import_react9.default.createElement("td", null, "employee_name"), /* @__PURE__ */ import_react9.default.createElement("td", null, "employee_address"), /* @__PURE__ */ import_react9.default.createElement("td", null, "type_of_request+sub_type_of_request"), /* @__PURE__ */ import_react9.default.createElement("td", { class: "d-flex align-items-center" }, /* @__PURE__ */ import_react9.default.createElement(Link, { to: "/request_slips/show", className: "btn btn-info btn-sm" }, "Show"), /* @__PURE__ */ import_react9.default.createElement(Link, { to: "/request_slips/edit", className: "btn btn-warning btn-sm ms-2" }, "Edit"))))))), /* @__PURE__ */ import_react9.default.createElement("nav", { class: "d-flex justify-content-center mt-4" }));
+  };
+
+  // src/components/request_slips/Show.js
+  var import_react10 = __toESM(require_react());
+  var Show_default2 = Show = () => {
+    return /* @__PURE__ */ import_react10.default.createElement("div", { class: "container nifty-container mt-4" }, /* @__PURE__ */ import_react10.default.createElement("div", { class: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { class: "card-header bg-primary text-white" }, /* @__PURE__ */ import_react10.default.createElement("h4", { class: "mb-0 text-white" }, "Slip Request Details")), /* @__PURE__ */ import_react10.default.createElement("div", { class: "card-body" }, /* @__PURE__ */ import_react10.default.createElement("div", { class: "table-responsive mb-4" }, /* @__PURE__ */ import_react10.default.createElement("table", { class: "table table-bordered table-striped" }, /* @__PURE__ */ import_react10.default.createElement("tbody", null, /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Company:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "company_code")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Request number:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "request_number", /* @__PURE__ */ import_react10.default.createElement("input", { type: "hidden", id: "request-slip-id", value: "<%= @sample_slip_request.request_number %>" }))), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Request date:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "request_date")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Customer:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "customer")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Address:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "address")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Employee name:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "employee_name")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Contact person:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "contact_person")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Designation:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "destination")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Contact no:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "contact_number")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Purpose of request:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "type_of_request")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Request description:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "request_slip_description")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Prepared by:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "prepared_by")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Recommended by:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "recommended_by")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Endorsed by:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "endorsed_by")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Approved by:"), /* @__PURE__ */ import_react10.default.createElement("td", null, "approved_by"))))), /* @__PURE__ */ import_react10.default.createElement("div", { class: "table-responsive mb-4" }, /* @__PURE__ */ import_react10.default.createElement("h5", { class: "mb-3 border-bottom pb-2" }, "Product Details"), /* @__PURE__ */ import_react10.default.createElement("table", { id: "TableDetails", class: "table table-bordered table-striped" }, /* @__PURE__ */ import_react10.default.createElement("thead", null, /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Item Description"), /* @__PURE__ */ import_react10.default.createElement("th", null, "Request Type"), /* @__PURE__ */ import_react10.default.createElement("th", null, "Quantity"))), /* @__PURE__ */ import_react10.default.createElement("tbody", null, /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("td", null, "product_description"), /* @__PURE__ */ import_react10.default.createElement("td", null, "issue_slip_type"), /* @__PURE__ */ import_react10.default.createElement("td", { nowrap: true }, "request_number")), /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("td", { colspan: "3", class: "text-center pt-4" }, /* @__PURE__ */ import_react10.default.createElement("p", null, "No Records of Sample Slip Request Details")))))), /* @__PURE__ */ import_react10.default.createElement("div", { class: "d-flex justify-content-between" }, /* @__PURE__ */ import_react10.default.createElement(Link, { to: "/request_slips", className: "btn btn-secondary" }, "Back"), /* @__PURE__ */ import_react10.default.createElement("div", null, /* @__PURE__ */ import_react10.default.createElement(Link, { to: "/request_slips/edit", className: "btn btn-warning me-2" }, "Edit"), /* @__PURE__ */ import_react10.default.createElement("input", { type: "button", class: "btn btn-info", id: "print-request-slip", value: "Print" }))))));
+  };
+
+  // src/components/request_slips/Edit.js
+  var import_react11 = __toESM(require_react());
+  var Edit_default2 = Edit = () => {
+    return /* @__PURE__ */ import_react11.default.createElement("div", { className: "container nifty-container mt-4" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "card-header bg-primary text-white" }, /* @__PURE__ */ import_react11.default.createElement("h4", { className: "mb-0 text-white" }, "Edit Request Slip")), /* @__PURE__ */ import_react11.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react11.default.createElement("form", null, /* @__PURE__ */ import_react11.default.createElement("div", { className: "mb-4" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-12" }, /* @__PURE__ */ import_react11.default.createElement("h5", { className: "mb-3 border-bottom pb-2" }, "Request Details"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "company_code"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-building" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "" }, "Please select..."), /* @__PURE__ */ import_react11.default.createElement("option", { value: "1" }, "CDCI"), /* @__PURE__ */ import_react11.default.createElement("option", { value: "2" }, "YSS"), /* @__PURE__ */ import_react11.default.createElement("option", { value: "5" }, "CYDC"))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Request Number"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-file" })), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        className: "form-control",
+        type: "text",
+        tabIndex: 1,
+        readOnly: true
+      }
+    ))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Purpose of Request"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-file" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "Sample" }, "Sample"), /* @__PURE__ */ import_react11.default.createElement("option", { value: "Commercial" }, "Commercial"), /* @__PURE__ */ import_react11.default.createElement("option", { value: "Commercial" })))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6", id: "hidden" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Others"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-file" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "" }, "Please select..."))))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Employee Name"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        className: "form-control",
+        type: "text",
+        required: true,
+        list: "employee_name",
+        autoComplete: "off"
+      }
+    ), /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", name: "employee_number" }), /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", name: "territory_code" }), /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", name: "team" }), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "employee_name" }), /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", name: "request_date" }))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Contact Number"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "number",
+        className: "form-control",
+        required: true,
+        autoComplete: "off"
+      }
+    ))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Customer"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "text",
+        className: "form-control",
+        name: "customer_name",
+        required: true,
+        autoComplete: "off",
+        list: "customer_datalist"
+      }
+    ), /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", name: "customer_code" }), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "customer_datalist" })), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Address"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "text",
+        className: "form-control",
+        required: true,
+        autoComplete: "off"
+      }
+    )), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Request Description"), /* @__PURE__ */ import_react11.default.createElement(
+      "textarea",
+      {
+        type: "text",
+        className: "form-control",
+        required: true,
+        rows: 1,
+        cols: 200,
+        autoComplete: "off"
+      }
+    )))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "mb-4" }, /* @__PURE__ */ import_react11.default.createElement("h5", { className: "mb-3 border-bottom pb-2" }, "Approval Details"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Recommended by"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-male" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-control" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "" }, "Please select..."))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", { htmlFor: "prepared_by" }, "Prepared by"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-male" })), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "text",
+        className: "form-control",
+        id: "prepared_by",
+        name: "prepared_by",
+        required: true,
+        readOnly: true
+      }
+    )))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Endorsed by"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-administrator" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "" }, "Please select..."))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Approved by"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "input-group" }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "input-group-text" }, /* @__PURE__ */ import_react11.default.createElement("i", { className: "pli-administrator" })), /* @__PURE__ */ import_react11.default.createElement("select", { className: "form-select" }, /* @__PURE__ */ import_react11.default.createElement("option", { value: "" }, "Please select...")))))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "mb-4" }, /* @__PURE__ */ import_react11.default.createElement("h5", { className: "mb-3 border-bottom pb-2" }, "Contact Details"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Contact Person"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "text",
+        name: "contact_person",
+        className: "form-control",
+        required: true,
+        autoComplete: "off"
+      }
+    ))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "col-md-6" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "form-group mb-3" }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Designation"), /* @__PURE__ */ import_react11.default.createElement(
+      "input",
+      {
+        type: "text",
+        className: "form-select",
+        autoComplete: "off"
+      }
+    ))))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "mb-4" }, /* @__PURE__ */ import_react11.default.createElement("h5", { className: "mb-3 border-bottom pb-2" }, "Product Details"), /* @__PURE__ */ import_react11.default.createElement("ul", { className: "nav nav-tabs", id: "productTabs", role: "tablist" }, /* @__PURE__ */ import_react11.default.createElement("li", { className: "nav-item", role: "presentation" }, /* @__PURE__ */ import_react11.default.createElement(
+      "button",
+      {
+        className: "nav-link active",
+        id: "sample-tab",
+        "data-bs-toggle": "tab",
+        "data-bs-target": "#sample",
+        type: "button",
+        role: "tab",
+        "aria-controls": "sample",
+        "aria-selected": "true"
+      },
+      "Sample"
+    )), /* @__PURE__ */ import_react11.default.createElement("li", { className: "nav-item", role: "presentation" }, /* @__PURE__ */ import_react11.default.createElement(
+      "button",
+      {
+        className: "nav-link",
+        id: "promats-tab",
+        "data-bs-toggle": "tab",
+        "data-bs-target": "#promats",
+        type: "button",
+        role: "tab",
+        "aria-controls": "promats",
+        "aria-selected": "false"
+      },
+      "Promats"
+    )), /* @__PURE__ */ import_react11.default.createElement("li", { className: "nav-item", role: "presentation" }, /* @__PURE__ */ import_react11.default.createElement(
+      "button",
+      {
+        className: "nav-link",
+        id: "packmats-tab",
+        "data-bs-toggle": "tab",
+        "data-bs-target": "#packmats",
+        type: "button",
+        role: "tab",
+        "aria-controls": "packmats",
+        "aria-selected": "false"
+      },
+      "Packmats"
+    )), /* @__PURE__ */ import_react11.default.createElement("li", { className: "nav-item", role: "presentation" }, /* @__PURE__ */ import_react11.default.createElement(
+      "button",
+      {
+        className: "nav-link",
+        id: "commercial-tab",
+        "data-bs-toggle": "tab",
+        "data-bs-target": "#commercial",
+        type: "button",
+        role: "tab",
+        "aria-controls": "commercial",
+        "aria-selected": "false"
+      },
+      "Commercial"
+    ))), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "sample_products" }), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "promats_products" }), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "packmats_products" }), /* @__PURE__ */ import_react11.default.createElement("datalist", { id: "commercial_products" }), /* @__PURE__ */ import_react11.default.createElement("div", { className: "tab-content mt-3", id: "productTabsContent" }, /* @__PURE__ */ import_react11.default.createElement(
+      "div",
+      {
+        className: "tab-pane fade show active",
+        id: "sample",
+        role: "tabpanel",
+        "aria-labelledby": "sample-tab"
+      },
+      /* @__PURE__ */ import_react11.default.createElement(
+        "table",
+        {
+          id: "TableDetails_Sample",
+          className: "table table-bordered table-hover mt-3"
+        },
+        /* @__PURE__ */ import_react11.default.createElement("thead", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("th", null, "Product Description"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Quantity"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Actions"))),
+        /* @__PURE__ */ import_react11.default.createElement("tbody", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "product_description",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "request_quantity",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "button",
+            className: "btn delete-btn btn-danger bg-danger",
+            id: "<%= detail.id %>",
+            value: "Delete"
+          }
+        ))))
+      ),
+      /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", id: "DetailCounterSample" }),
+      /* @__PURE__ */ import_react11.default.createElement(
+        "input",
+        {
+          className: "addNew btn btn-info",
+          id: "addNewSample",
+          name: "",
+          type: "button",
+          value: "Add Row",
+          tabIndex: "0"
+        }
+      )
+    ), /* @__PURE__ */ import_react11.default.createElement(
+      "div",
+      {
+        className: "tab-pane fade",
+        id: "promats",
+        role: "tabpanel",
+        "aria-labelledby": "promats-tab"
+      },
+      /* @__PURE__ */ import_react11.default.createElement(
+        "table",
+        {
+          id: "TableDetails_Promats",
+          className: "table table-bordered table-hover mt-3"
+        },
+        /* @__PURE__ */ import_react11.default.createElement("thead", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("th", null, "Product Description"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Quantity"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Actions"))),
+        /* @__PURE__ */ import_react11.default.createElement("tbody", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "product_description",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "request_quantity",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "button",
+            className: "btn delete-btn btn-danger bg-danger",
+            id: "<%= detail.id %>",
+            value: "Delete"
+          }
+        ))))
+      ),
+      /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", id: "DetailCounterPromats" }),
+      /* @__PURE__ */ import_react11.default.createElement(
+        "input",
+        {
+          className: "addNew btn btn-info",
+          id: "addNew",
+          name: "",
+          type: "button",
+          value: "Add Row",
+          tabIndex: "0"
+        }
+      )
+    ), /* @__PURE__ */ import_react11.default.createElement(
+      "div",
+      {
+        className: "tab-pane fade",
+        id: "packmats",
+        role: "tabpanel",
+        "aria-labelledby": "packmats-tab"
+      },
+      /* @__PURE__ */ import_react11.default.createElement(
+        "table",
+        {
+          id: "TableDetails_Packmats",
+          className: "table table-bordered table-hover mt-3"
+        },
+        /* @__PURE__ */ import_react11.default.createElement("thead", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("th", null, "Product Description"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Quantity"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Actions"))),
+        /* @__PURE__ */ import_react11.default.createElement("tbody", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "product_description",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "request_quantity",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "button",
+            className: "btn delete-btn btn-danger bg-danger",
+            id: "<%= detail.id %>",
+            value: "Delete"
+          }
+        ))))
+      ),
+      /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", id: "DetailCounterPackmats" }),
+      /* @__PURE__ */ import_react11.default.createElement(
+        "input",
+        {
+          className: "addNew btn btn-info",
+          id: "addNew",
+          name: "",
+          type: "button",
+          value: "Add Row",
+          tabIndex: "0"
+        }
+      )
+    ), /* @__PURE__ */ import_react11.default.createElement(
+      "div",
+      {
+        className: "tab-pane fade",
+        id: "commercial",
+        role: "tabpanel",
+        "aria-labelledby": "commercial-tab"
+      },
+      /* @__PURE__ */ import_react11.default.createElement(
+        "table",
+        {
+          id: "TableDetails_Commercial",
+          className: "table table-bordered table-hover mt-3"
+        },
+        /* @__PURE__ */ import_react11.default.createElement("thead", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("th", null, "Product Description"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Quantity"), /* @__PURE__ */ import_react11.default.createElement("th", null, "Actions"))),
+        /* @__PURE__ */ import_react11.default.createElement("tbody", null, /* @__PURE__ */ import_react11.default.createElement("tr", null, /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "product_description",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "text",
+            name: "request_quantity",
+            className: "form-control",
+            disabled: true
+          }
+        )), /* @__PURE__ */ import_react11.default.createElement("td", null, /* @__PURE__ */ import_react11.default.createElement(
+          "input",
+          {
+            type: "button",
+            className: "btn delete-btn btn-danger bg-danger",
+            id: "<%= detail.id %>",
+            value: "Delete"
+          }
+        ))))
+      ),
+      /* @__PURE__ */ import_react11.default.createElement("input", { type: "hidden", id: "DetailCounterCommercial" }),
+      /* @__PURE__ */ import_react11.default.createElement(
+        "input",
+        {
+          className: "addNew btn btn-info",
+          id: "addNew",
+          name: "",
+          type: "button",
+          value: "Add Row",
+          tabIndex: "0"
+        }
+      )
+    ))), /* @__PURE__ */ import_react11.default.createElement("div", { className: "d-flex justify-content-between" }, /* @__PURE__ */ import_react11.default.createElement(Link, { to: "/request_slips", className: "btn btn-secondary" }, "Back"), /* @__PURE__ */ import_react11.default.createElement(Link, { to: "", className: "btn btn-success" }, "Save Request Slip"))))));
+  };
+
+  // src/App.js
+  function App() {
+    const [isMaximized, setIsMaximized] = (0, import_react12.useState)(true);
+    const toggleNav = () => {
+      setIsMaximized((prev) => !prev);
+    };
+    (0, import_react12.useEffect)(() => {
+      const rootElement = document.getElementById("root");
+      if (rootElement) {
+        rootElement.classList.remove("mn--max", "mn--min");
+        rootElement.classList.add(isMaximized ? "mn--max" : "mn--min");
+      }
+    }, [isMaximized]);
+    return /* @__PURE__ */ import_react12.default.createElement(import_react12.default.Fragment, null, /* @__PURE__ */ import_react12.default.createElement(Header_default, { toggleNav }), /* @__PURE__ */ import_react12.default.createElement(Routes, null, /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/agent_user_menus", element: /* @__PURE__ */ import_react12.default.createElement(Index_default, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/agent_user_menus/new", element: /* @__PURE__ */ import_react12.default.createElement(New_default, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/agent_user_menus/edit", element: /* @__PURE__ */ import_react12.default.createElement(New_default, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/transfer_slips", element: /* @__PURE__ */ import_react12.default.createElement(Index_default2, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/transfer_slips/show", element: /* @__PURE__ */ import_react12.default.createElement(Show_default, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/transfer_slips/edit", element: /* @__PURE__ */ import_react12.default.createElement(Edit_default, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/request_slips", element: /* @__PURE__ */ import_react12.default.createElement(Index_default3, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/request_slips/show", element: /* @__PURE__ */ import_react12.default.createElement(Show_default2, null) }), /* @__PURE__ */ import_react12.default.createElement(Route, { path: "/request_slips/edit", element: /* @__PURE__ */ import_react12.default.createElement(Edit_default2, null) })), /* @__PURE__ */ import_react12.default.createElement(Nav_default, null));
+  }
+
   // src/index.js
   var container = document.getElementById("root");
   var root = import_client.default.createRoot(container);
   root.render(
-    /* @__PURE__ */ import_react5.default.createElement(HashRouter, null, /* @__PURE__ */ import_react5.default.createElement(App, null))
+    /* @__PURE__ */ import_react13.default.createElement(HashRouter, null, /* @__PURE__ */ import_react13.default.createElement(App, null))
   );
 })();
 /*! Bundled license information:

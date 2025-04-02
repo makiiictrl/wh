@@ -33,55 +33,55 @@ export default Nav = () => {
             {/* {/ Navigation Menu /} */}
             <ul className="mainnav__menu nav flex-column">
               <li className="nav-item has-sub">
-                <a href="/agent_user_menus" className="mininav nav-link">
+                <a href="/#/agent_user_menus" className="mininav nav-link">
                   <i className="psi-professor fs-5 me-2"></i>
                   <span className="nav-label ms-1">User Menus</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/marketings" className="mininav nav-link">
+                <a href="/#/marketings" className="mininav nav-link">
                   <i className="psi-paperclip fs-5 me-2"></i>
                   <span className="nav-label ms-1">Marketing</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/transfer_slips" className="mininav nav-link">
+                <a href="/#/transfer_slips" className="mininav nav-link">
                   <i className="psi-paper-plane fs-5 me-2"></i>
                   <span className="nav-label ms-1">Transfer Slip</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/sample_slip_requests" className="mininav nav-link">
+                <a href="/#/request_slips" className="mininav nav-link">
                   <i className="psi-folder fs-5 me-2"></i>
                   <span className="nav-label ms-1">Request Slip</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/sample_slip_issuances" className="mininav nav-link">
+                <a href="/#/sample_slip_issuances" className="mininav nav-link">
                   <i className="psi-file fs-5 me-2"></i>
                   <span className="nav-label ms-1">Issue Slip</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/inventories/new" className="mininav nav-link">
+                <a href="/#/inventories/new" className="mininav nav-link">
                   <i className="psi-id-card fs-5 me-2"></i>
                   <span className="nav-label ms-1">Inventory Entry</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/inventories" className="mininav nav-link">
+                <a href="/#/inventories" className="mininav nav-link">
                   <i className="psi-folder-with-document fs-5 me-2"></i>
                   <span className="nav-label ms-1">Inventory Listing</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/item_masters" className="mininav nav-link">
+                <a href="/#/item_masters" className="mininav nav-link">
                   <i className="psi-folder-organizing fs-5 me-2"></i>
                   <span className="nav-label ms-1">Item Master</span>
                 </a>
               </li>
               <li className="nav-item has-sub">
-                <a href="/packing_lists" className="mininav nav-link">
+                <a href="/#/packing_lists" className="mininav nav-link">
                   <i className="psi-numbering-list fs-5 me-2"></i>
                   <span className="nav-label ms-1">Packing List</span>
                 </a>
@@ -92,12 +92,15 @@ export default Nav = () => {
           <div className="mainnav__bottom-content border-top pb-2">
             <ul id="mainnav" className="mainnav__menu nav flex-column">
               <li className="nav-item has-sub">
+                
                 <a
                   href="https://portal.cathaydrug.com/logout"
                   className="test nav-link mininav-toggle collapsed"
                   aria-expanded="false"
                 >
-                  Logout
+                <i className="pli-unlock fs-5 me-2"></i>
+                <span className="nav-label ms-1">Logout</span>
+                  
                 </a>
               </li>
             </ul>
